@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-12T04:02:04.953Z</updated>
+  <updated>2022-04-12T11:45:57.941Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,51 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>article</title>
-    <link href="http://example.com/2022/04/12/article/"/>
-    <id>http://example.com/2022/04/12/article/</id>
+    <title>hello world</title>
+    <link href="http://example.com/2022/04/12/hello-world/"/>
+    <id>http://example.com/2022/04/12/hello-world/</id>
     <published>2022-04-12T04:02:04.000Z</published>
-    <updated>2022-04-12T04:02:04.953Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客新建文章并发布</title>
-    <link href="http://example.com/2022/04/10/blog220412/"/>
-    <id>http://example.com/2022/04/10/blog220412/</id>
-    <published>2022-04-10T10:57:04.720Z</published>
-    <updated>2022-04-12T04:25:17.048Z</updated>
-    
-    <content type="html"><![CDATA[<p>1.Markdown<br>写博客文章我们会使用Markdown来排版，它通过一些简单的标记语法让文本具有一定的格式。<br>2.VSCode<br>我个人使用的编辑器是vscode,支持多种语法，界面很优雅，像我一样优雅，而且支持多种插件。</p><p>Hexo文章管理<br>1、创建一个md文件即markdown文件<br>$ hexo new <title></p><p>2.布局（layout）<br>创建md文件时，我们可以指定布局<br>$ hexo new [layout] <title></p><p>布局有三种：post（文章）、draft（草稿）、page（页面）</p><p>这样就在你的目录里生成一个mk文件，快去编辑它吧！</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1.Markdown&lt;br&gt;写博客文章我们会使用Markdown来排版，它通过一些简单的标记语法让文本具有一定的格式。&lt;br&gt;2.VSCode&lt;br&gt;我个人使用的编辑器是vscode,支持多种语法，界面很优雅，像我一样优雅，而且支持多种插件。&lt;/p&gt;
-&lt;p&gt;Hexo文章管理</summary>
-      
-    
-    
-    
-    <category term="搭建博客" scheme="http://example.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
-    
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/04/10/hello-world/"/>
-    <id>http://example.com/2022/04/10/hello-world/</id>
-    <published>2022-04-10T09:55:21.873Z</published>
-    <updated>2022-04-10T09:55:21.873Z</updated>
+    <updated>2022-04-12T11:45:57.941Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -73,6 +33,35 @@
     
     
     
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="BLOG" scheme="http://example.com/tags/BLOG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从零开始搭建个人博客（一）</title>
+    <link href="http://example.com/2022/04/12/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://example.com/2022/04/12/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2022-04-12T04:02:04.000Z</published>
+    <updated>2022-04-12T11:55:36.923Z</updated>
+    
+    <content type="html"><![CDATA[<p>考虑过很多构建知识网络的方法，先后使用过notion、onenote、用过telegram记过笔记，后来想想自己搭个网站吧，搞个自己的知识库，具体步骤如下：</p><h5 id="1、注册github账号"><a href="#1、注册github账号" class="headerlink" title="1、注册github账号"></a>1、注册github账号</h5><h5 id="2、安装git软件"><a href="#2、安装git软件" class="headerlink" title="2、安装git软件"></a>2、安装git软件</h5><h5 id="3、安装nodejs软件"><a href="#3、安装nodejs软件" class="headerlink" title="3、安装nodejs软件"></a>3、安装nodejs软件</h5><h5 id="4、安装HEXO"><a href="#4、安装HEXO" class="headerlink" title="4、安装HEXO"></a>4、安装HEXO</h5><h5 id="5、初始化HEXO"><a href="#5、初始化HEXO" class="headerlink" title="5、初始化HEXO"></a>5、初始化HEXO</h5><h5 id="6、将blog部署到github服务器"><a href="#6、将blog部署到github服务器" class="headerlink" title="6、将blog部署到github服务器"></a>6、将blog部署到github服务器</h5><h3 id="1、注册github账号-1"><a href="#1、注册github账号-1" class="headerlink" title="1、注册github账号"></a>1、注册github账号</h3><p>github官网：<a href="https://github.com/">https://github.com/</a><br>进入官网之后点击 sign up按钮 根据步骤进行注册需要注意的是，github不支持QQ邮箱。</p><h3 id="2、安装git软件-1"><a href="#2、安装git软件-1" class="headerlink" title="2、安装git软件"></a>2、安装git软件</h3><p>Git安装方法很多，最简单的是直接官网下载软件包，然后安装（Mac和Windows及其他版本都有）<br>下载链接：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p><h3 id="3、安装nodejs软件-1"><a href="#3、安装nodejs软件-1" class="headerlink" title="3、安装nodejs软件"></a>3、安装nodejs软件</h3><p>Node.js也可以直接去官网下载对应系统安装包，然后一步步安装即可。<br>下载链接：<a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p><p>这一步windows需要配置环境，具体方法网上很多，需要注意的是，路径一定要选正确</p><h3 id="4、安装hexo"><a href="#4、安装hexo" class="headerlink" title="4、安装hexo"></a>4、安装hexo</h3><p>新建项目目录，可以在任意位置，尽量全英文路径。以我为例，我会在E盘创建一个blog的文件夹，用于存放我的项目文件</p><p>如果你下载好了git并配置好了nodejs，进入blog文件夹，右击会出现一个git bash here的标志，点击它，输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>这样你的hexo就安装好了</p><h3 id="5、初始化hexo"><a href="#5、初始化hexo" class="headerlink" title="5、初始化hexo"></a>5、初始化hexo</h3><p>右击git bash here 输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure><p>这一步你的blog文件夹里会生成很多文件，hexo已经在你电脑上了。</p><h3 id="6、将blog部署到github服务器-1"><a href="#6、将blog部署到github服务器-1" class="headerlink" title="6、将blog部署到github服务器"></a>6、将blog部署到github服务器</h3><p>登录github账号，创建一个新项目，项目名称：（你的账户名）.github.io<br>我们回到我们的blog文件夹，修改配置文件_config.yml，在最下方改成</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"> repository: https://github.com/（你的名字）/（你的名字）.github.io.git</span><br><span class="line"> branch: master</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>现在可以输入以下指令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>如果没出错的话，现在你的blog已经部署到github服务器上去了<br>输入：（你的名字）.github.io 就可以进行访问了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;考虑过很多构建知识网络的方法，先后使用过notion、onenote、用过telegram记过笔记，后来想想自己搭个网站吧，搞个自己的知识库，具体步骤如下：&lt;/p&gt;
+&lt;h5 id=&quot;1、注册github账号&quot;&gt;&lt;a href=&quot;#1、注册github账号&quot; class=&quot;h</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="BLOG" scheme="http://example.com/tags/BLOG/"/>
     
   </entry>
   
