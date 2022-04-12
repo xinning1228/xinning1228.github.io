@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lemon</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-04-10T11:40:11.883Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>xinning</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2022/04/10/%E7%94%9F%E6%B4%BB%E4%B8%8E%E9%87%91%E8%9E%8D/"/>
+    <id>http://example.com/2022/04/10/%E7%94%9F%E6%B4%BB%E4%B8%8E%E9%87%91%E8%9E%8D/</id>
+    <published>2022-04-10T10:57:04.720Z</published>
+    <updated>2022-04-10T11:40:11.883Z</updated>
+    
+    <content type="html"><![CDATA[<p>title: 《你真正想要什么》<br>categories: 维多.费尔舍<br>tags: 书籍<br>toc: true # 是否启用内容索引<br>1、金钱的重要性是我们赋予的。如果你有财务问题，金钱就会变得尤为重要。<br>2、我们的价值观和目标必须协调一致，否则我们便会处于矛盾之中。<br>3、乐观主义让你看到事物的积极面，而自信给你一种战胜事物黑暗面的信心。<br>4、自信指的是，一个人在自身经历的基础之上，知道他遇事可以依靠自己。<br>5、你的思维方式铸就了你今天的样子。这样的思维方式却并不能让你变成你想成为的样子。<br>6、成功意味着成为最好的自己。幸福指的是热爱你现在的样子。<br>7、财务问题总是会对其他几个领域造成消极影响。<br>8、做个选择：你是想拥有一台赚钱机器，还是穷其一生成为一台赚钱机器。<br>9、将你的事业建立在你最大的兴趣之上。<br>10、整天工作的人是没有时间来赚钱的。<br>只有当你清晰地确定指导自己的价值观之后，你才能掌控自己的生活<br>11、你一生中能否有所作为，并不直接取决于你铁一般的行动准则，而是与你的梦想、目标、价值观和策略直接相关。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;title: 《你真正想要什么》&lt;br&gt;categories: 维多.费尔舍&lt;br&gt;tags: 书籍&lt;br&gt;toc: true # 是否启用内容索引&lt;br&gt;1、金钱的重要性是我们赋予的。如果你有财务问题，金钱就会变得尤为重要。&lt;br&gt;2、我们的价值观和目标必须协调一致，否则</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2022/04/10/hello-world/"/>
+    <id>http://example.com/2022/04/10/hello-world/</id>
+    <published>2022-04-10T09:55:21.873Z</published>
+    <updated>2022-04-10T09:55:21.873Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
