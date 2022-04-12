@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-10T11:40:11.883Z</updated>
+  <updated>2022-04-12T04:02:04.953Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,22 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2022/04/10/%E7%94%9F%E6%B4%BB%E4%B8%8E%E9%87%91%E8%9E%8D/"/>
-    <id>http://example.com/2022/04/10/%E7%94%9F%E6%B4%BB%E4%B8%8E%E9%87%91%E8%9E%8D/</id>
+    <title>article</title>
+    <link href="http://example.com/2022/04/12/article/"/>
+    <id>http://example.com/2022/04/12/article/</id>
+    <published>2022-04-12T04:02:04.000Z</published>
+    <updated>2022-04-12T04:02:04.953Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo博客新建文章并发布</title>
+    <link href="http://example.com/2022/04/10/blog220412/"/>
+    <id>http://example.com/2022/04/10/blog220412/</id>
     <published>2022-04-10T10:57:04.720Z</published>
-    <updated>2022-04-10T11:40:11.883Z</updated>
+    <updated>2022-04-12T04:25:17.048Z</updated>
     
-    <content type="html"><![CDATA[<p>title: 《你真正想要什么》<br>categories: 维多.费尔舍<br>tags: 书籍<br>toc: true # 是否启用内容索引<br>1、金钱的重要性是我们赋予的。如果你有财务问题，金钱就会变得尤为重要。<br>2、我们的价值观和目标必须协调一致，否则我们便会处于矛盾之中。<br>3、乐观主义让你看到事物的积极面，而自信给你一种战胜事物黑暗面的信心。<br>4、自信指的是，一个人在自身经历的基础之上，知道他遇事可以依靠自己。<br>5、你的思维方式铸就了你今天的样子。这样的思维方式却并不能让你变成你想成为的样子。<br>6、成功意味着成为最好的自己。幸福指的是热爱你现在的样子。<br>7、财务问题总是会对其他几个领域造成消极影响。<br>8、做个选择：你是想拥有一台赚钱机器，还是穷其一生成为一台赚钱机器。<br>9、将你的事业建立在你最大的兴趣之上。<br>10、整天工作的人是没有时间来赚钱的。<br>只有当你清晰地确定指导自己的价值观之后，你才能掌控自己的生活<br>11、你一生中能否有所作为，并不直接取决于你铁一般的行动准则，而是与你的梦想、目标、价值观和策略直接相关。</p>]]></content>
+    <content type="html"><![CDATA[<p>1.Markdown<br>写博客文章我们会使用Markdown来排版，它通过一些简单的标记语法让文本具有一定的格式。<br>2.VSCode<br>我个人使用的编辑器是vscode,支持多种语法，界面很优雅，像我一样优雅，而且支持多种插件。</p><p>Hexo文章管理<br>1、创建一个md文件即markdown文件<br>$ hexo new <title></p><p>2.布局（layout）<br>创建md文件时，我们可以指定布局<br>$ hexo new [layout] <title></p><p>布局有三种：post（文章）、draft（草稿）、page（页面）</p><p>这样就在你的目录里生成一个mk文件，快去编辑它吧！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;title: 《你真正想要什么》&lt;br&gt;categories: 维多.费尔舍&lt;br&gt;tags: 书籍&lt;br&gt;toc: true # 是否启用内容索引&lt;br&gt;1、金钱的重要性是我们赋予的。如果你有财务问题，金钱就会变得尤为重要。&lt;br&gt;2、我们的价值观和目标必须协调一致，否则</summary>
+    <summary type="html">&lt;p&gt;1.Markdown&lt;br&gt;写博客文章我们会使用Markdown来排版，它通过一些简单的标记语法让文本具有一定的格式。&lt;br&gt;2.VSCode&lt;br&gt;我个人使用的编辑器是vscode,支持多种语法，界面很优雅，像我一样优雅，而且支持多种插件。&lt;/p&gt;
+&lt;p&gt;Hexo文章管理</summary>
       
     
     
     
+    <category term="搭建博客" scheme="http://example.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
