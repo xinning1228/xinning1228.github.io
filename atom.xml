@@ -6,7 +6,7 @@
   <link href="http://bugdog.cn/atom.xml" rel="self"/>
   
   <link href="http://bugdog.cn/"/>
-  <updated>2022-04-14T12:33:42.247Z</updated>
+  <updated>2022-04-19T08:07:17.500Z</updated>
   <id>http://bugdog.cn/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从零开始搭建个人博客（三）</title>
+    <link href="http://bugdog.cn/2022/04/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>http://bugdog.cn/2022/04/19/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%89%EF%BC%89/</id>
+    <published>2022-04-19T06:40:43.000Z</published>
+    <updated>2022-04-19T08:07:17.500Z</updated>
+    
+    <content type="html"><![CDATA[<p>上一期教程你已经学会了如何购买喜欢的域名，以及如何将域名解析到你的网站上，本期教给你如何去润色你的网站，打造属于你的风格。</p><h5 id="1、下载主题"><a href="#1、下载主题" class="headerlink" title="1、下载主题"></a>1、下载主题</h5><h5 id="2、更改主题"><a href="#2、更改主题" class="headerlink" title="2、更改主题"></a>2、更改主题</h5><h5 id="3、主题的一些相关设置"><a href="#3、主题的一些相关设置" class="headerlink" title="3、主题的一些相关设置"></a>3、主题的一些相关设置</h5><h5 id="4、本地预览及上传"><a href="#4、本地预览及上传" class="headerlink" title="4、本地预览及上传"></a>4、本地预览及上传</h5><h3 id="1、下载主题-1"><a href="#1、下载主题-1" class="headerlink" title="1、下载主题"></a>1、下载主题</h3><p>下载主题有两种办法，你可以直接输入主题网站 例如：<a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe">https://github.com/theme-nexmoe/hexo-theme-nexmoe</a> 下载压缩包 解压到博客文件夹theme即可，或者输入在根目录git输入以下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-nexmoe/hexo-theme-nexmoe.git</span><br></pre></td></tr></table></figure><p>这样hexo的主题就下载到本地了</p><h3 id="2、更改主题-1"><a href="#2、更改主题-1" class="headerlink" title="2、更改主题"></a>2、更改主题</h3><p>打开根目录中_config文件，将theme后面的名称替换为：themes中的文件夹名称并保存。</p><h3 id="3、主题的一些相关设置-1"><a href="#3、主题的一些相关设置-1" class="headerlink" title="3、主题的一些相关设置"></a>3、主题的一些相关设置</h3><p>我们约定：根目录中的_config文件为配置文件，theme中的_config文件为主题文件。打开主题文件，在那里我们可以更改主题中的相关设置，例如分类、归档等，在配置文件中我们可以更改一些基础配置，例如选用什么主题或者网站名称等。</p><h3 id="4、本地预览及上传-1"><a href="#4、本地预览及上传-1" class="headerlink" title="4、本地预览及上传"></a>4、本地预览及上传</h3><p>输入以下代码清理网站缓存：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br></pre></td></tr></table></figure><p>输入以下代码下载：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>输入以下代码本地预览：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>输入以下代码上传至服务器：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure><h4 id="稍等片刻刷新我们的网站就可以看到主题已经更改了，下期我将盘点一些颜值较高的一些主题分享给大家，下期再见。"><a href="#稍等片刻刷新我们的网站就可以看到主题已经更改了，下期我将盘点一些颜值较高的一些主题分享给大家，下期再见。" class="headerlink" title="稍等片刻刷新我们的网站就可以看到主题已经更改了，下期我将盘点一些颜值较高的一些主题分享给大家，下期再见。"></a>稍等片刻刷新我们的网站就可以看到主题已经更改了，下期我将盘点一些颜值较高的一些主题分享给大家，下期再见。</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上一期教程你已经学会了如何购买喜欢的域名，以及如何将域名解析到你的网站上，本期教给你如何去润色你的网站，打造属于你的风格。&lt;/p&gt;
+&lt;h5 id=&quot;1、下载主题&quot;&gt;&lt;a href=&quot;#1、下载主题&quot; class=&quot;headerlink&quot; title=&quot;1、下载主题&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="http://bugdog.cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="BLOG" scheme="http://bugdog.cn/tags/BLOG/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始搭建个人博客（二）</title>
