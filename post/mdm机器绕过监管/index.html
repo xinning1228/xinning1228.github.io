@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="MDM机器绕过监管 6.1重新安装系统 电脑关机状态下，键盘长按command&#43;R键不放，同时按一下开机键松手，此时继续长按command&#43;R键不放，直到出现苹果图标。 选择“磁盘工具”，然后“继续” 选择系统磁盘，点击抹掉。这里可以看到磁盘使用情况，以及剩余情况。 弹出提示要抹掉“mac os”吗？这里一定要注意磁盘格式一定要选择APFS格式. 抹点进程完成，点击完成 回到macOS实用工具界面，选择重新安装 macOS，点击继续。 初始安装将运行大约 1 小时，并重新启动一次 然后它将显示大约 10-15 分钟的剩余时间 当它再次重新启动时，请务必按command-R启动进入恢复并继续执行主要程序 6.2主要程序 打开终端输入以下代码 $ csrutil disable $ reboot 再次进入恢复模式 进入磁盘工具,安装HD盘 退出磁盘工具,打开终端输入以下代码 $ cd &#34;/Volumes/Macintosh HD/System/Library&#34; $ cd ../../etc $ echo &#34;0.0.0.0 iprofiles.apple.com&#34; &gt;&gt; hosts $ echo &#34;0.0.0.0 mdmenrollment.apple.com&#34; &gt;&gt; hosts $ echo &#34;0.0.0.0 deviceenrollment.apple.com&#34; &gt;&gt; hosts $ echo &#34;0.0.0.0 gdmf.apple.com&#34; &gt;&gt; hosts $ csrutil enable $ reboot 如果您来到“选择您的国家/地区”对话框，请确保不要选择无线网络，而是“在没有互联网连接的情况下继续” 正常启动后，您可以在终端中验证 DEP 状态： $ profiles status -type enrollment Enrolled via DEP: No MDM enrollment: No ">  
+
+  <title>
+    
+      MDM机器绕过监管 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>MDM机器绕过监管 </h1>
+
+    <h3 id="mdm机器绕过监管">MDM机器绕过监管</h3>
+<h4 id="61重新安装系统">6.1重新安装系统</h4>
+<ol>
+<li>电脑关机状态下，键盘长按command+R键不放，同时按一下开机键松手，此时继续长按command+R键不放，直到出现苹果图标。</li>
+<li>选择“磁盘工具”，然后“继续”</li>
+<li>选择系统磁盘，点击抹掉。这里可以看到磁盘使用情况，以及剩余情况。</li>
+<li>弹出提示要抹掉“mac os”吗？这里一定要注意磁盘格式一定要选择APFS格式.</li>
+<li>抹点进程完成，点击完成</li>
+<li>回到macOS实用工具界面，选择重新安装 macOS，点击继续。</li>
+<li>初始安装将运行大约 1 小时，并重新启动一次</li>
+<li>然后它将显示大约 10-15 分钟的剩余时间</li>
+<li>当它再次重新启动时，请务必按<code>command-R</code>启动进入恢复并继续执行<strong>主要程序</strong></li>
+</ol>
+<h4 id="62主要程序">6.2主要程序</h4>
+<ol>
+<li>打开终端输入以下代码</li>
+</ol>
+<pre tabindex="0"><code>$ csrutil disable
+$ reboot
+</code></pre><ol start="2">
+<li>再次进入恢复模式</li>
+<li>进入磁盘工具,安装HD盘</li>
+<li>退出磁盘工具,打开终端输入以下代码</li>
+</ol>
+<pre tabindex="0"><code>$ cd &#34;/Volumes/Macintosh HD/System/Library&#34;
+$ cd ../../etc
+$ echo &#34;0.0.0.0 iprofiles.apple.com&#34; &gt;&gt; hosts
+$ echo &#34;0.0.0.0 mdmenrollment.apple.com&#34; &gt;&gt; hosts
+$ echo &#34;0.0.0.0 deviceenrollment.apple.com&#34; &gt;&gt; hosts
+$ echo &#34;0.0.0.0 gdmf.apple.com&#34; &gt;&gt; hosts
+$ csrutil enable
+$ reboot
+</code></pre><ol start="5">
+<li>如果您来到“选择您的国家/地区”对话框，请确保不要选择无线网络，而是“在没有互联网连接的情况下继续”</li>
+<li>正常启动后，您可以在终端中验证 DEP 状态：</li>
+</ol>
+<pre tabindex="0"><code>$ profiles status -type enrollment
+Enrolled via DEP: No
+MDM enrollment: No
+</code></pre>
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

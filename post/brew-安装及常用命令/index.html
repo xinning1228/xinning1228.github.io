@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="mac下镜像飞速安装Homebrew教程 Homebrew是一款包管理工具，目前支持macOS和linux系统。主要有四个部分组成: brew、homebrew-core 、homebrew-cask、homebrew-bottles。
+本文主要介绍Homebrew安装方式以及如何加速访问，顺便普及一些必要的知识。
+如果你是在M1芯片的Mac上安装Homebrew，可以先阅读下这篇文章：
+如果安装过程中遇到问题，请遵循下面的沟通方式：
+GitHub Issue（推荐） 评论留言 私信 你可以点此 homebrew-install 创建issue，这也是最及时、最标准的反馈方式。
+本教程拥有自己的主页啦，你可以获得更好的阅读体验，速度点击下面卡片查看：
+1. 写在前面 curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation timed out 使用官方脚本遇到上面的错误提示：请按照下面「安装步骤」步骤执行。
+官方脚本无法使用的原因是raw.githubusercontent.com访问很不稳定，也可以采用写入hosts的方式，可以一定程度解决GitHub资源无法访问的问题，我也写了一篇操作文章，有需要可以阅读下。
+2. 安装步骤 如果有更换镜像源的想法，强烈推荐使用镜像助手获取执行脚本。
+/bin/bash -c &#34;$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)&#34; 如果命令执行中卡在下面信息（如提示有差异，请反馈给我）：
+==&gt; Tapping homebrew/core Cloning into &#39;/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core&#39;... 请Control &#43; C中断脚本执行如下命令：
+cd &#34;$(brew --repo)/Library/Taps/&#34; mkdir homebrew &amp;&amp; cd homebrew git clone git://mirrors.ustc.edu.cn/homebrew-core.git cask 同样也有安装失败或者卡住的问题，解决方法也是一样：
+cd &#34;$(brew --repo)/Library/Taps/&#34; cd homebrew git clone https://mirrors.ustc.edu.cn/homebrew-cask.git 成功执行之后继续执行前文的安装命令:">  
+
+  <title>
+    
+      mac下镜像飞速安装Homebrew教程 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>mac下镜像飞速安装Homebrew教程 </h1>
+
+    <h1 id="mac下镜像飞速安装homebrew教程">mac下镜像飞速安装Homebrew教程</h1>
+<p><img src="https://picx.zhimg.com/v2-1a1842c11e55f3eef4aebdad642795d6_720w.jpg?source=172ae18b" alt="mac下镜像飞速安装Homebrew教程"></p>
+<p><code>Homebrew</code>是一款包管理工具，目前支持<code>macOS</code>和<code>linux</code>系统。主要有四个部分组成: <code>brew</code>、<code>homebrew-core</code> 、<code>homebrew-cask</code>、<code>homebrew-bottles</code>。</p>
+<p><img src="https://pic1.zhimg.com/v2-c62ae8d13e72cb89e9e4770bb9a10b64_r.jpg" alt="img"></p>
+<p>本文主要介绍<code>Homebrew</code>安装方式以及如何加速访问，顺便普及一些必要的知识。</p>
+<p>如果你是在<code>M1</code>芯片的<code>Mac</code>上安装<code>Homebrew</code>，可以先阅读下这篇文章：</p>
+<p>如果安装过程中遇到问题，请遵循下面的沟通方式：</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//github.com/ineo6/homebrew-install">GitHub Issue</a>（推荐）</li>
+<li>评论留言</li>
+<li>私信</li>
+</ul>
+<p>你可以点此 <a href="https://link.zhihu.com/?target=https%3A//github.com/ineo6/homebrew-install">homebrew-install</a> 创建<code>issue</code>，这也是最及时、最标准的反馈方式。</p>
+<p><strong>本教程拥有自己的主页啦，你可以获得更好的阅读体验，速度点击下面卡片查看：</strong></p>
+<h2 id="1-写在前面">1. 写在前面</h2>
+<pre tabindex="0"><code>curl: (7) Failed to connect to raw.githubusercontent.com port 443: Operation timed out
+</code></pre><p>使用官方脚本遇到上面的错误提示：请按照下面「安装步骤」步骤执行。</p>
+<blockquote>
+<p>官方脚本无法使用的原因是<code>raw.githubusercontent.com</code>访问很不稳定，也可以采用写入<code>hosts</code>的方式，可以一定程度解决<code>GitHub</code>资源无法访问的问题，我也写了一篇操作文章，有需要可以阅读下。</p>
+</blockquote>
+<h2 id="2-安装步骤">2. 安装步骤</h2>
+<p><strong>如果有更换镜像源的想法，强烈推荐使用<a href="https://link.zhihu.com/?target=https%3A//brew.idayer.com/guide/change-source">镜像助手</a>获取执行脚本。</strong></p>
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)&#34;
+</code></pre><p>如果命令执行中卡在下面信息（如提示有差异，请反馈给我）：</p>
+<pre tabindex="0"><code>==&gt; Tapping homebrew/core
+Cloning into &#39;/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core&#39;...
+</code></pre><p>请<code>Control + C</code>中断脚本执行如下命令：</p>
+<pre tabindex="0"><code>cd &#34;$(brew --repo)/Library/Taps/&#34;
+mkdir homebrew &amp;&amp; cd homebrew
+git clone git://mirrors.ustc.edu.cn/homebrew-core.git
+</code></pre><p><strong><code>cask</code> 同样也有安装失败或者卡住的问题，解决方法也是一样：</strong></p>
+<pre tabindex="0"><code>cd &#34;$(brew --repo)/Library/Taps/&#34;
+cd homebrew
+git clone https://mirrors.ustc.edu.cn/homebrew-cask.git
+</code></pre><p>成功执行之后继续执行前文的安装命令:</p>
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)&#34;
+</code></pre><p>最后看到<code>==&gt; Installation successful!</code>就说明安装成功了。</p>
+<p>最最后更新下：</p>
+<h2 id="3-设置镜像">3. 设置镜像</h2>
+<p><code>brew</code>、<code>homebrew/core</code>是必备项目，<code>homebrew/cask</code>、<code>homebrew/bottles</code>按需设置。</p>
+<p>通过 <code>brew config</code> 命令可以查看相关配置信息。</p>
+<h3 id="31-中科大源">3.1 中科大源</h3>
+<pre tabindex="0"><code>git -C &#34;$(brew --repo)&#34; remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+git -C &#34;$(brew --repo homebrew/core)&#34; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+git -C &#34;$(brew --repo homebrew/cask)&#34; remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
+
+brew update
+</code></pre><h3 id="32-清华大学源">3.2 清华大学源</h3>
+<pre tabindex="0"><code>git -C &#34;$(brew --repo)&#34; remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+git -C &#34;$(brew --repo homebrew/core)&#34; remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+git -C &#34;$(brew --repo homebrew/cask)&#34; remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+
+brew update
+</code></pre><p>更多可选源请访问 <a href="https://link.zhihu.com/?target=https%3A//brew.idayer.com/guide/change-source">镜像助手</a>。</p>
+<h3 id="33-设置bottles镜像">3.3 设置bottles镜像</h3>
+<p>设置环境变量需要注意终端<code>Shell</code>的类型，请看下面说明：</p>
+<p>镜像以<strong>中科大源</strong>为例。</p>
+<p>从<code>macOS Catalina</code>(10.15.x) 版开始，<code>Mac</code>使用<code>zsh</code>作为默认<code>Shell</code>，对应文件是<code>.zprofile</code>，所以命令为：</p>
+<pre tabindex="0"><code>echo &#39;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles&#39; &gt;&gt; ~/.zprofile
+source ~/.zprofile
+</code></pre><p>如果是<code>macOS Mojave</code> 及更低版本，并且没有自己配置过<code>zsh</code>，对应文件则是<code>.bash_profile</code>：</p>
+<pre tabindex="0"><code>echo &#39;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles/bottles&#39; &gt;&gt; ~/.bash_profile
+source ~/.bash_profile
+</code></pre><blockquote>
+<p>注意：上述区别仅仅是<code>.zprofile</code>和<code>.bash_profile</code>不同，文章如有再次提及编辑<code>.zprofile</code>，均按此方法替换。</p>
+</blockquote>
+<p>如果想使用清华源：</p>
+<pre tabindex="0"><code>把
+https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
+
+替换为
+https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/bottles
+</code></pre><p>至此，安装和设置操作都完成了。</p>
+<h3 id="34-恢复默认源">3.4 恢复默认源</h3>
+<pre tabindex="0"><code>git -C &#34;$(brew --repo)&#34; remote set-url origin https://github.com/Homebrew/brew.git
+
+git -C &#34;$(brew --repo homebrew/core)&#34; remote set-url origin https://github.com/Homebrew/homebrew-core.git
+
+git -C &#34;$(brew --repo homebrew/cask)&#34; remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+
+brew update
+</code></pre><p><code>homebrew-bottles</code>配置只能手动删除，将 <code>~/.zprofile</code> 文件中的 <code>HOMEBREW_BOTTLE_DOMAIN=https://mirrors.xxx.com</code>内容删除，并执行 <code>source ~/.zprofile</code>。</p>
+<h2 id="4-其他相关">4. 其他相关</h2>
+<h3 id="41-cask">4.1 cask</h3>
+<p>目前<code>cask</code>是从<code>GitHub</code>上读取软件源，而<code>GitHub Api</code>对访问有限制，如果使用比较频繁的话，可以申请<code>Api Token</code>，然后在环境变量中配置到<code>HOMEBREW_GITHUB_API_TOKEN</code>。</p>
+<p>在<code>.zprofile</code>中追加，注意替换<code>yourtoken</code>:</p>
+<pre tabindex="0"><code>echo &#39;export HOMEBREW_GITHUB_API_TOKEN=yourtoken&#39; &gt;&gt; ~/.zprofile
+source ~/.zprofile
+</code></pre><p>注意：因为<code>cask</code>是从<code>GitHub</code>下载软件，所以目前是无法加速的。</p>
+<h3 id="42-如何卸载homebrew">4.2 如何卸载Homebrew</h3>
+<p>使用官方脚本同样会遇到<code>uninstall</code>地址无法访问问题，可以使用下面脚本：</p>
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/uninstall.sh)&#34;
+</code></pre><h3 id="43-反馈问题">4.3 反馈问题</h3>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//github.com/ineo6/homebrew-install">GitHub Issue</a>（推荐）</li>
+<li>评论留言</li>
+<li>私信</li>
+</ul>
+<p>你可以点此 <a href="https://link.zhihu.com/?target=https%3A//github.com/ineo6/homebrew-install">homebrew-install</a> 创建<code>issue</code>，这也是最及时、最标准的反馈方式。</p>
+<h2 id="5-总结">5. 总结</h2>
+<p>在前面的过程中我们把<code>brew</code>和<code>homebrew-core</code>的地址都指向到中科大镜像。</p>
+<p>原理是通过修改<code>install.sh</code>脚本，在里面预设镜像地址。</p>
+<pre tabindex="0"><code>STAT=&#34;stat --printf&#34;
+  CHOWN=&#34;/bin/chown&#34;
+  CHGRP=&#34;/bin/chgrp&#34;
+  GROUP=&#34;$(id -gn)&#34;
+  TOUCH=&#34;/bin/touch&#34;
+fi
+# 这里替换了BREW_REPO
+BREW_REPO=&#34;https://mirrors.ustc.edu.cn/brew.git&#34;
+</code></pre><h2 id="如果对您有帮助">如果对您有帮助</h2>
+<p>点赞、分享、收藏，能让更多人能发现文章，这也是对我的认可和鼓励，谢谢。</p>
+<h2 id="参考文章">参考文章</h2>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//mirror.tuna.tsinghua.edu.cn/help/homebrew/">清华大学开源软件镜像站</a></li>
+<li><a href="https://link.zhihu.com/?target=http%3A//mirrors.ustc.edu.cn/help/brew.git.html%23">中科大源</a></li>
+</ul>
+<hr>
+<h2 id="广告插播">广告插播</h2>
+<p><code>GitMaster</code>可以树形展示<code>git</code>项目代码。</p>
+<ul>
+<li>代码树支持<code>GitHub</code>、<code>GitLab</code>、<code>Gitee</code></li>
+<li>️ 支持私有部署页面，一键标记</li>
+<li>️ 文件提交历史可视化 <code>git history</code></li>
+<li><code>GitHub</code>通知提醒功能</li>
+<li>⬇️ 支持<code>GitHub</code>文件、目录下载</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/v2-59d3a51e7c84e2a19f87ed0a8246c293_r.jpg" alt="img"></p>
+<h3 id="安装">安装</h3>
+<h3 id="商店安装">商店安装</h3>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//chrome.google.com/webstore/detail/git-master/klmeolbcejnhefkapdchfhlhhjgobhmo">Chrome Web Store</a></li>
+<li><a href="https://link.zhihu.com/?target=https%3A//microsoftedge.microsoft.com/addons/detail/pcpkfgepcjdmdfelbabogmgoadgmiocg">Edge Web Store</a></li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<p>大部分问题都是资源不稳定导致的，如果可以的话尽量通过代理加速。</p>
+<p>代理使用可以参考以下文章：</p>
+<ul>
+<li><a href="https://link.zhihu.com/?target=http%3A//onwaier.com/%3Fp%3D229">Mac终端走ssr代理</a></li>
+<li><a href="https://link.zhihu.com/?target=https%3A//www.xiaodefa.com/digital/121.html">如何让macOS的「终端」走代理？</a></li>
+</ul>
+<p>最新版问题排查内容请访问<a href="https://link.zhihu.com/?target=https%3A//brew.idayer.com/guide/faq/">FAQ</a>，以便获得强有力的支持。</p>
+<h3 id="no1-的小秘籍"><strong>No.1 的小秘籍</strong></h3>
+<p>遇到解决不了的问题，先删除<code>homebrew</code>目录再重新运行脚本安装。</p>
+<ul>
+<li>x86 上安装目录： <code>/usr/local/Homebrew/</code></li>
+<li>arm 上安装目录： <code>/opt/homebrew</code></li>
+</ul>
+<h3 id="fatal-unable-to-access-xxx">fatal: unable to access xxx</h3>
+<pre tabindex="0"><code>HEAD is now at 028e733e7 Merge pull request #10260 from reitermarkus/audit-livecheck
+
+fatal: unable to access &#39;https://github.com/Homebrew/homebrew-core/&#39;: transfer closed with outstanding read data remaining
+fatal: ambiguous argument &#39;refs/remotes/origin/master&#39;: unknown revision or path not in the working tree.
+Use &#39;--&#39; to separate paths from revisions, like this:
+&#39;git &lt;command&gt; [&lt;revision&gt;...] -- [&lt;file&gt;...]&#39;
+</code></pre><p>解决方案：</p>
+<ul>
+<li>根据文章<a href="https://zhuanlan.zhihu.com/p/107691233">解决GitHub网页githubusercontent地址无法访问问题</a>，给<code>github.com</code>域名加速</li>
+<li>通过代理访问</li>
+</ul>
+<h3 id="设置镜像无效安装还是很慢">设置镜像无效，安装还是很慢</h3>
+<p>这里说的安装很慢主要是指<code>brew</code>本身安装速度慢（镜像地址没有设置成功）。</p>
+<p>可以执行命令<code>echo $SHELL</code>，先查看终端类型。</p>
+<ul>
+<li>bash: <code>/bin/bash</code></li>
+<li>zsh: <code>/bin/zsh</code></li>
+</ul>
+<p>然后根据终端类型设置镜像，参考&quot;设置镜像&quot;。</p>
+<h3 id="command-not-found-brew">command not found: brew</h3>
+<p>一般是环境变量无效，请使用<code>echo $SHELL</code>确认终端类型，参考上节。</p>
+<p>如果是<code>m1</code>芯片<code>Mac</code>需要手动设置环境变量：</p>
+<p>zsh</p>
+<pre tabindex="0"><code>echo &#39;eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;&#39; &gt;&gt; ~/.zprofile
+eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;
+</code></pre><p>bash</p>
+<pre tabindex="0"><code>echo &#39;eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;&#39; &gt;&gt; ~/.bash_profile
+eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;
+</code></pre><p>非<code>m1</code>芯片，可以尝试手动加入环境变量：</p>
+<p>zsh</p>
+<pre tabindex="0"><code>echo &#39;eval &#34;$(/usr/local/Homebrew/bin/brew shellenv)&#34;&#39; &gt;&gt; ~/.zprofile
+eval &#34;$(/usr/local/Homebrew/bin/brew shellenv)&#34;
+</code></pre><p>bash</p>
+<pre tabindex="0"><code>echo &#39;eval &#34;$(/usr/local/Homebrew/bin/brew shellenv)&#34;&#39; &gt;&gt; ~/.bash_profile
+eval &#34;$(/usr/local/Homebrew/bin/brew shellenv)&#34;
+</code></pre><h3 id="sha256-mismatch">SHA256 mismatch</h3>
+<pre tabindex="0"><code>Error: An exception occurred within a child process:
+  ChecksumMismatchError: SHA256 mismatch
+Expected: 01059532335fefc5e0e7a23cc79eeb1dc6fea477606981b89f259aa0e0f9abc1
+  Actual: 641ba394c891cee16dfa45873906edab12edfc9befaa121649bb18e7b7d574bf
+ Archive: /Users/XXX/Library/Caches/Homebrew/downloads/1124b500fc261f6d9be6193eca8c120f4dfb7ecd3470ac7d8edc1d04ecc5b345--jdk13u-jdk-13.0.2+8.tar.bz2
+To retry an incomplete download, remove the file above.
+</code></pre><p>遇到该问题时请尝试该方案：<a href="https://link.zhihu.com/?target=https%3A//blog.csdn.net/lemostic/article/details/107101219">https://blog.csdn.net/lemostic/article/details/107101219</a></p>
+<p>本文首发:</p>
+<h2 id="home-brew-常用命令">home brew 常用命令</h2>
+<ul>
+<li>查看brew的帮助</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew –help
+</span></span></code></pre></div><ul>
+<li>安装软件</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install git
+</span></span></code></pre></div><ul>
+<li>卸载软件</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew uninstall git
+</span></span></code></pre></div><ul>
+<li>搜索软件</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew search git
+</span></span></code></pre></div><ul>
+<li>显示已经安装软件列表</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew list
+</span></span></code></pre></div><ul>
+<li>更新软件，把所有的Formula目录更新，并且会对本机已经安装并有更新的软件用*标明。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew update
+</span></span></code></pre></div><ul>
+<li>更新某具体软件</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew upgrade git
+</span></span></code></pre></div><ul>
+<li>显示软件内容信息</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew info git
+</span></span></code></pre></div><ul>
+<li>用浏览器打开</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew home
+</span></span></code></pre></div><ul>
+<li>显示包依赖</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew deps 
+</span></span></code></pre></div><ul>
+<li>显示包的依赖树</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew deps --installed --tree
+</span></span></code></pre></div><ul>
+<li>启动web服务器，可以通过浏览器访问http://localhost:4567/ 来同网页来管理包</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew server
+</span></span></code></pre></div><ul>
+<li>删除程序，和upgrade一样，单个软件删除和所有程序老版删除。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew cleanup git 
+</span></span><span style="display:flex;"><span>brew cleanup
+</span></span></code></pre></div><ul>
+<li>查看那些已安装的程序需要更新</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew outdated
+</span></span></code></pre></div><pre tabindex="0"><code>brew update               自动升级homebrew（从github下载最新版本） 
+brew outdated             检测已经过时的软件 
+brew upgrade              升级所有已过时的软件，即列出的以过时软件 
+brew upgrade &lt;formula&gt;    升级指定的软件 
+brew pin &lt;formula&gt;        禁止指定软件升级 
+brew unpin &lt;formula&gt;      解锁禁止升级 
+brew upgrade --all        升级所有的软件包，包括未清理干净的旧版本的包 
+brew cleanup -n           列出需要清理的内容 
+brew cleanup &lt;formula&gt;    清理指定的软件过时包 
+brew cleanup              清理所有的过时软件 
+brew uninstall &lt;formula&gt;    卸载指定软件 
+brew uninstall &lt;fromula&gt; --force 彻底卸载指定软件，包括旧版本 
+brew list                 显示所有的已安装的软件 
+brew search text          搜索本地远程仓库的软件，已安装会显示绿色的勾 
+brew search /text/        使用正则表达式搜软件
+</code></pre><h2 id="homebrew国内如何自动安装国内地址mac--linux">Homebrew国内如何自动安装（国内地址）（Mac &amp; Linux）</h2>
+<p><img src="https://picx.zhimg.com/v2-c40d2ef7e08afbb2750f2c5b4b45c923_720w.jpg?source=172ae18b" alt="Homebrew国内如何自动安装（国内地址）（Mac &amp; Linux）"></p>
+<blockquote>
+<p><em>如果你是提示来这个页面查看<strong>错误</strong>，说明你用的脚本太老了，用下面脚本安装。</em></p>
+</blockquote>
+<h2 id="自动脚本全部国内地址复制下面一句脚本到终端中粘贴回车">自动脚本(全部国内地址)（复制下面一句脚本到终端中粘贴回车)</h2>
+<p><strong>苹果电脑 常规安装脚本（推荐 完全体 几分钟安装完成）：</strong></p>
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34;
+</code></pre><p><strong>苹果电脑 极速安装脚本（精简版 几秒钟安装完成）：</strong></p>
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&#34; speed
+</code></pre><p>-&gt; <a href="https://link.zhihu.com/?target=https%3A//support.apple.com/zh-cn/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac">Mac电脑如何打开终端：command+空格 在聚焦搜索中输入terminal回车</a><em>。</em></p>
+<p><strong>苹果电脑 卸载脚本：</strong></p>
+<pre tabindex="0"><code>/bin/zsh -c &#34;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)&#34;
+</code></pre><p><strong>常见错误</strong>去下方<a href="https://link.zhihu.com/?target=https%3A//gitee.com/cunkai/HomebrewCN/blob/master/error.md">地址</a>查看</p>
+<pre tabindex="0"><code>https://gitee.com/cunkai/HomebrewCN/blob/master/error.md
+</code></pre><p><strong>Linux电脑</strong> 安装脚本：</p>
+<pre tabindex="0"><code>rm Homebrew.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh ; bash Homebrew.sh
+</code></pre><p><strong>Linux电脑</strong> 卸载脚本：</p>
+<pre tabindex="0"><code>rm HomebrewUninstall.sh ; wget https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh ; bash HomebrewUninstall.sh
+</code></pre>
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

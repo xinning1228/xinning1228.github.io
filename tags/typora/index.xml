@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typora on bug dog</title>
+    <link>http://xinning1228.github.io/tags/typora/</link>
+    <description>Recent content in Typora on bug dog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2022 17:38:34 +0000</lastBuildDate><atom:link href="http://xinning1228.github.io/tags/typora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用github&#43;picGo&#43;Typora解决网页图片插入问题</title>
+      <link>http://xinning1228.github.io/post/%E4%BD%BF%E7%94%A8github&#43;picgo&#43;typora%E8%A7%A3%E5%86%B3%E7%BD%91%E9%A1%B5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 11 Dec 2022 17:38:34 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BD%BF%E7%94%A8github&#43;picgo&#43;typora%E8%A7%A3%E5%86%B3%E7%BD%91%E9%A1%B5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</guid>
+      <description>利用图床可以完美解决markdown文件图片插入的问题,使用github的免费空间储存图片,结合picGo自动上传功能,可以算的上一个完美的图床方案
+一.github配置 1.1 创建一个新仓库用于图片储存 点击新建一个仓库
+给仓库填写名称
+勾选以下两个选项选项
+点击绿色按钮创建
+1.2 获取Token用于pic访问github 打开github设置
+找到设置中Developer settings选项
+点击personal access tokens
+点击token (classic)
+点击Generate new token 点击Generate new token (classic)
+填写名称
+选择时间
+勾选ropo选项
+最后点击绿色按钮Generate token 新建
+复制生成的token值
+token值只显示一次,注意保存.
+二. picGo配置 2.1 下载picGo并安装 picGo下载地址
+2.2 配置picGo 打开picGo软件 点击图床设置 点击｀github 仓库名：[github用户名]/[第一步新建的仓库名称] 分支：默认master，从2020.10.01开始，github的默认分支名变更为main 设定token：第一步创建的token 指定存储路径：可填可不填，如果填写了，图片就会存储在img文件夹下 设定自定义域名：https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main，注意，此处的分支一定要填写@main 三. Typora配置 3.1 下载Typora并安装 下载地址
+3.2 配置Typora中上传功能 上传服务设定为PicGo(app)
+设定路径
+点击验证图片上传选项,测试上传功能
+3.3 配置PicGo-Server 将监听地址设为:127.0.0.1
+监听端口设为36677
+配置完成之后,每次在Typora中插入图片,可转为图床中的地址,从而解决markdown文件,图像插入的问题</description>
+    </item>
+    
+    <item>
+      <title>Typora实用技巧</title>
+      <link>http://xinning1228.github.io/post/typora-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Fri, 09 Dec 2022 14:29:38 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/typora-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+      <description>一、块元素 1.1 标题 标题在行的开头使用1-6个＃字符，对应于标题级别1-6，当然也可使用ctrl+数字键进行分级。
+# 这是一级标题## 这是二级标题###### 这是六级标题 1.2 引用文字 Markdown 使用电子邮件样式&amp;gt;字符进行块引用。它们表示为
+&amp;gt;可以进行嵌套,例如:
+今天是很美好的
+明天会更加美好
+后天是周末
+&amp;gt; 这是一个有两段的块引用。这是第一段。&amp;gt; 这是第二段。Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&amp;gt; 这是另一个只有一个段落的块引用。有三个空行分隔两个块引用。 1.3 列表 输入 * list item 1 将创建一个无序列表，该 * 符号可以替换为 + 或 -.例如
+这是无序列表 这是无序列表 这是无序列表 输入 1. list item 1 将创建一个有序列表.例如:
+这是有序列表 这是有序列表 这是有序列表 其 markdown 源代码如下：
+按teb可以进行缩进
+## 无序列表 * 红色 * 绿色 * 蓝色 ## 有序列表 1.</description>
+    </item>
+    
+  </channel>
+</rss>

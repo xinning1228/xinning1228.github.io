@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Picgo对接Cloudflare R2的方法 1.安装Picgo及Node.js
+2.启用CF-R2，不再赘述（请准备一张信用卡）
+3.新建一个储存桶
+4.随后在 “Manage R2 API Token” 中，Create API Token
+注意，需要Edit权限
+会生成一个
+Access Key ID 和
+Secret Access Key 请保留。
+随后进入Picgo软件，安装S3插件
+进入Amazon S3，进行设置
+把上面生成的 Access Key ID 填入 应用密钥ID；Secret Access Key 填入 应用密钥
+桶就是bucket名，直接填写即可
+文件路径实际上也包含重命名规则，可按如下格式填写
+payload 描述 {year} 当前日期 - 年 {month} 当前日期 - 月 {day} 当前日期 - 日 {fullName} 完整文件名（含扩展名） {fileName} 文件名（不含扩展名） {extName} 扩展名（不含.） {md5} 图片 MD5 计算值 {sha1} 图片 SHA1 计算值 {sha256} 图片 SHA256 计算值 地区填写 us-east-1 切记，必填">  
+
+  <title>
+    
+      Picgo对接Cloudflare R2的方法
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-03-27 12:13:48 &#43;0800 CST">
+            2023-03-27
+        </time>
+    </p>
+
+    <h1>Picgo对接Cloudflare R2的方法</h1>
+
+    <h1 id="picgo对接cloudflare-r2的方法">Picgo对接Cloudflare R2的方法</h1>
+<p>1.安装Picgo及Node.js</p>
+<p>2.启用CF-R2，不再赘述（请准备一张信用卡）</p>
+<p>3.新建一个储存桶<img src="https://r2.01r.cc/2023/01/2194375bff50a2cf284929f0802fa444.png" alt="img"></p>
+<p>4.随后在 “Manage R2 API Token” 中，Create API Token</p>
+<p><img src="https://r2.01r.cc/2023/01/65fa56a96b8a0c0dafadf2313c912bab.png" alt="img"></p>
+<p>注意，需要<strong>Edit</strong>权限</p>
+<p><img src="https://r2.01r.cc/2023/01/f62d27009248c15bc85ec498b482b9f9.png" alt="img"></p>
+<p>会生成一个</p>
+<h4 id="access-key-id">Access Key ID</h4>
+<p>和</p>
+<h4 id="secret-access-key">Secret Access Key</h4>
+<p>请保留。</p>
+<p>随后进入Picgo软件，安装S3插件</p>
+<p><img src="https://r2.01r.cc/2023/01/183660a31eed4d9884b5f618ab34babc.png" alt="img"></p>
+<p>进入Amazon S3，进行设置</p>
+<p><img src="https://r2.01r.cc/2023/01/3ac159adbcaecc703afadcb9736af755.png" alt="img"></p>
+<p>把上面生成的 <strong>Access Key ID</strong> 填入 <strong>应用密钥ID</strong>；<strong>Secret Access Key</strong> 填入 <strong>应用密钥</strong></p>
+<p>桶就是bucket名，直接填写即可</p>
+<p>文件路径实际上也包含重命名规则，可按如下格式填写</p>
+<table>
+<thead>
+<tr>
+<th>payload</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{year}</code></td>
+<td>当前日期 - 年</td>
+</tr>
+<tr>
+<td><code>{month}</code></td>
+<td>当前日期 - 月</td>
+</tr>
+<tr>
+<td><code>{day}</code></td>
+<td>当前日期 - 日</td>
+</tr>
+<tr>
+<td><code>{fullName}</code></td>
+<td>完整文件名（含扩展名）</td>
+</tr>
+<tr>
+<td><code>{fileName}</code></td>
+<td>文件名（不含扩展名）</td>
+</tr>
+<tr>
+<td><code>{extName}</code></td>
+<td>扩展名（不含<code>.</code>）</td>
+</tr>
+<tr>
+<td><code>{md5}</code></td>
+<td>图片 MD5 计算值</td>
+</tr>
+<tr>
+<td><code>{sha1}</code></td>
+<td>图片 SHA1 计算值</td>
+</tr>
+<tr>
+<td><code>{sha256}</code></td>
+<td>图片 SHA256 计算值</td>
+</tr>
+</tbody>
+</table>
+<p>地区填写  <strong>us-east-1 切记，必填</strong></p>
+<p><img src="https://r2.01r.cc/2023/01/9e6512a6173f59b01698e1c2f42f1b00.png" alt="img"></p>
+<p>“自定义节点”填写 框内的一串链接，你可以轻易的在R2页面找到，也被描述为“S3 API”。</p>
+<p>请开启桶的公开访问，并建议绑定自定义域名</p>
+<p>自定义域名填写你设置的自定义域名，也可填写CF提供的Public Bucket URL，不要忘记开头的 https:// （末尾无需“/”）</p>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

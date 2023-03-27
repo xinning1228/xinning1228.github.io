@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="考虑过很多构建知识网络的方法，先后使用过notion、onenote、用过telegram记过笔记，后来想想自己搭个网站吧，搞个自己的知识库，具体步骤如下：
+1、注册github账号 2、安装git软件 3、安装nodejs软件 4、安装HEXO 5、初始化HEXO 6、将blog部署到github服务器 1、注册github账号 github官网：https://github.com/ 进入官网之后点击 sign up按钮 根据步骤进行注册需要注意的是，github不支持QQ邮箱。
+2、安装git软件 Git安装方法很多，最简单的是直接官网下载软件包，然后安装（Mac和Windows及其他版本都有） 下载链接：https://git-scm.com/downloads
+3、安装nodejs软件 Node.js也可以直接去官网下载对应系统安装包，然后一步步安装即可。 下载链接：https://nodejs.org/zh-cn/download/
+这一步windows需要配置环境，具体方法网上很多，需要注意的是，路径一定要选正确
+4、安装hexo 新建项目目录，可以在任意位置，尽量全英文路径。以我为例，我会在E盘创建一个blog的文件夹，用于存放我的项目文件
+如果你下载好了git并配置好了nodejs，进入blog文件夹，右击会出现一个git bash here的标志，点击它，输入：
+$ npm install -g hexo-cli 这样你的hexo就安装好了
+5、初始化hexo 右击git bash here 输入：
+$ hexo init 这一步你的blog文件夹里会生成很多文件，hexo已经在你电脑上了。
+6、将blog部署到github服务器 登录github账号，创建一个新项目，项目名称：（你的账户名）.github.io 我们回到我们的blog文件夹，修改配置文件_config.yml，在最下方改成
+deploy: type: git repository: https://github.com/（你的名字）/（你的名字）.github.io.git branch: master 现在可以输入以下指令
+$ hexo g $ hexo s $ hexo d 如果没出错的话，现在你的blog已经部署到github服务器上去了 输入：（你的名字）.github.io 就可以进行访问了 ">  
+
+  <title>
+    
+      从零开始搭建个人博客（一）
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2022-04-12 12:02:04 &#43;0000 UTC">
+            2022-04-12
+        </time>
+    </p>
+
+    <h1>从零开始搭建个人博客（一）</h1>
+
+    <p>考虑过很多构建知识网络的方法，先后使用过notion、onenote、用过telegram记过笔记，后来想想自己搭个网站吧，搞个自己的知识库，具体步骤如下：</p>
+<h5 id="1注册github账号">1、注册github账号</h5>
+<h5 id="2安装git软件">2、安装git软件</h5>
+<h5 id="3安装nodejs软件">3、安装nodejs软件</h5>
+<h5 id="4安装hexo">4、安装HEXO</h5>
+<h5 id="5初始化hexo">5、初始化HEXO</h5>
+<h5 id="6将blog部署到github服务器">6、将blog部署到github服务器</h5>
+<h3 id="1注册github账号-1">1、注册github账号</h3>
+<p>github官网：https://github.com/
+进入官网之后点击 sign up按钮 根据步骤进行注册需要注意的是，github不支持QQ邮箱。</p>
+<h3 id="2安装git软件-1">2、安装git软件</h3>
+<p>Git安装方法很多，最简单的是直接官网下载软件包，然后安装（Mac和Windows及其他版本都有）
+下载链接：https://git-scm.com/downloads</p>
+<h3 id="3安装nodejs软件-1">3、安装nodejs软件</h3>
+<p>Node.js也可以直接去官网下载对应系统安装包，然后一步步安装即可。
+下载链接：https://nodejs.org/zh-cn/download/</p>
+<p>这一步windows需要配置环境，具体方法网上很多，需要注意的是，路径一定要选正确</p>
+<h3 id="4安装hexo-1">4、安装hexo</h3>
+<p>新建项目目录，可以在任意位置，尽量全英文路径。以我为例，我会在E盘创建一个blog的文件夹，用于存放我的项目文件</p>
+<p>如果你下载好了git并配置好了nodejs，进入blog文件夹，右击会出现一个git bash here的标志，点击它，输入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm install -g hexo-cli
+</span></span></code></pre></div><p>这样你的hexo就安装好了</p>
+<h3 id="5初始化hexo-1">5、初始化hexo</h3>
+<p>右击git bash here 输入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hexo init
+</span></span></code></pre></div><p>这一步你的blog文件夹里会生成很多文件，hexo已经在你电脑上了。</p>
+<h3 id="6将blog部署到github服务器-1">6、将blog部署到github服务器</h3>
+<p>登录github账号，创建一个新项目，项目名称：（你的账户名）.github.io
+我们回到我们的blog文件夹，修改配置文件_config.yml，在最下方改成</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>deploy:
+</span></span><span style="display:flex;"><span> type: git
+</span></span><span style="display:flex;"><span> repository: https://github.com/（你的名字）/（你的名字）.github.io.git
+</span></span><span style="display:flex;"><span> branch: master
+</span></span></code></pre></div><p>现在可以输入以下指令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hexo g
+</span></span><span style="display:flex;"><span>$ hexo s
+</span></span><span style="display:flex;"><span>$ hexo d
+</span></span></code></pre></div><h4 id="如果没出错的话现在你的blog已经部署到github服务器上去了-输入你的名字githubio-就可以进行访问了">如果没出错的话，现在你的blog已经部署到github服务器上去了 输入：（你的名字）.github.io 就可以进行访问了</h4>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

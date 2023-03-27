@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="如何在Mac上安装Node.js和NPM 首页 » 网页服务器 » 如何在Mac上安装Node.js和NPM
+介绍
+Node.js是一个流行的后端JavaScript运行时，用于创建Web服务器和可扩展的网络应用程序。该环境支持服务器端脚本-在提供给用户之前为网页生成动态内容。
+NPM是JavaScript的软件包管理器和Node.js的默认软件包管理器。因此，NPM作为推荐功能与Node.js一起安装。
+本教程将向您展示如何使用Homebrew软件包管理器在Mac上安装Node.js和NPM。
+先决条件
+访问终端 行政级别特权 **注意：**Node.js在其网站上有一个适用于macOS的PKG安装程序。然而，使用Homebrew安装是推荐的方法。
+安装自制 1.要在macOS上安装Homebrew，请浏览Homebrew的官方网站并复制页面上显示的链接。
+**注意：**不要从屏幕截图中复制命令，因为它将来可能会发生变化。始终访问网站以获取最新命令。
+2.打开终端并粘贴命令。出现提示时键入sudo密码。最后，按Return键确认要安装Homebrew。
+在Mac上安装Node.js和NPM **注意：**有关其他操作系统，请参阅我们在Windows、Ubuntu、CentOS和Debian上安装Node.js和NPM的教程。
+1.键入以下命令来安装Node.js和NPM：
+brew install node Homebrew下载并安装依赖项。
+2.安装完成后，通过检查其版本来确认您成功安装了Node.js：
+node -v 系统将Node.js版本显示为命令的输出。
+3.接下来，通过键入来检查NPM的安装版本：
+npm -v 显示NPM版本号。
+在Mac上更新Node.js和NPM 1.在继续升级Node.js安装之前，请通过键入以下内容来更新Homebrew的存储库：
+brew update 2.更新完成后，键入以下命令：
+brew upgrade node 示例中的输出显示，系统上已经安装了最新版本的Node.js。
+**注意：**有关更多详细信息，请查看我们的文章如何更新Node.js和NPM。
+在Mac上卸载Node.js和NPM 1.使用**brew uninstall**命令卸载Node.js和NPM：
+brew uninstall node 2.使用以下方式删除所有未使用的依赖项：
+brew autoremove 此命令删除**brew uninstall**未删除的软件包。
+结论
+阅读本教程后，您应该知道如何使用Homebrew在macOS上安装Node.js和NPM。如果您想了解有关具有Node.js的MEAN堆栈的更多信息，请阅读LAMP与MEAN：哪个更好？
+Marko Aleksic
+Marko Aleksić是phoenixNAP的技术作家。他对IT所有事物的与生俱来的好奇心，加上十多年的写作、教学和在IT相关领域的工作背景，使他进入技术写作，在那里他有机会运用自己的技能，使技术对每个人来说不那么令人生畏。
+接下来你应该阅读
+数据库
+MongoDB与MySQL
+2020年12月31日
+从交易模型差异到支持质量，数据库管理系统有各种形状和大小。在本比较文章中，您将阅读两种流行的DBMS解决方案之间的区别：MongoDB和MySQL。
+阅读更多
+© 2022 版权所有 phoenixNAP | 全球 IT 服务。版权所有。">  
+
+  <title>
+    
+      如何在Mac上安装Node.js和NPM 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>如何在Mac上安装Node.js和NPM </h1>
+
+    <h1 id="如何在mac上安装nodejs和npm">如何在Mac上安装Node.js和NPM</h1>
+<p><a href="https://phoenixnap.com/kb/">首页 </a>» <a href="https://phoenixnap.com/kb/category/web-servers">网页服务器 </a>» 如何在Mac上安装Node.js和NPM</p>
+<p>介绍</p>
+<p>Node.js是一个流行的后端JavaScript运行时，用于创建<a href="https://phoenixnap.com/blog/web-server-vs-application-server">Web服务器</a>和可扩展的网络应用程序。该环境支持服务器端脚本-在提供给用户之前为网页生成动态内容。</p>
+<p>NPM是JavaScript的软件包管理器和Node.js的默认软件包管理器。因此，NPM作为推荐功能与Node.js一起安装。</p>
+<p><strong>本教程将向您展示如何使用Homebrew软件包管理器在Mac上安装Node.js和NPM。</strong></p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/how-to-install-node-js-and-npm-on-mac.png" alt="如何在Mac上安装Node.js和NPM"></p>
+<p>先决条件</p>
+<ul>
+<li>访问终端</li>
+<li>行政级别特权</li>
+</ul>
+<p>**注意：**Node.js在其网站上有一个适用于macOS的PKG安装程序。然而，使用Homebrew安装是推荐的方法。</p>
+<h2 id="安装自制">安装自制</h2>
+<p>1.要在macOS上安装Homebrew，请浏览<a href="https://brew.sh/">Homebrew的官方网站</a>并复制页面上显示的链接。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/copying-link-for-homebrew-installation-on-mac-os.png" alt="在MacOS上复制Homebrew的安装命令"></p>
+<p>**注意：**不要从屏幕截图中复制命令，因为它将来可能会发生变化。始终访问网站以获取最新命令。</p>
+<p>2.打开终端并粘贴命令。出现提示时键入sudo密码。最后，按<strong>Return</strong>键确认要安装Homebrew。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-bin-bash-c-curl-https-homebrew-macos.png" alt="在MacOS上安装Homebrew"></p>
+<h2 id="在mac上安装nodejs和npm">在Mac上安装Node.js和NPM</h2>
+<p>**注意：**有关其他操作系统，请参阅我们在<a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">Windows</a>、<a href="https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu">Ubuntu</a>、<a href="https://phoenixnap.com/kb/install-node-js-npm-centos">CentOS</a>和<a href="https://phoenixnap.com/kb/debian-install-nodejs">Debian</a>上安装Node.js和NPM的教程。</p>
+<p>1.键入以下命令来安装Node.js和NPM：</p>
+<pre tabindex="0"><code>brew install node
+</code></pre><p>Homebrew下载并安装依赖项。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-brew-install-node-macos.png" alt="使用Homebrew在MacOS上安装Node.js和NPM"></p>
+<p>2.安装完成后，通过检查其版本来确认您成功安装了Node.js：</p>
+<pre tabindex="0"><code>node -v
+</code></pre><p>系统将Node.js版本显示为命令的输出。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-node-v-macos.png" alt="在MacOS上检查Node.js安装的版本"></p>
+<p>3.接下来，通过键入来检查NPM的安装版本：</p>
+<pre tabindex="0"><code>npm -v
+</code></pre><p>显示NPM版本号。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-npm-v-macos.png" alt="在MacOS上检查NPM安装的版本"></p>
+<h2 id="在mac上更新nodejs和npm">在Mac上更新Node.js和NPM</h2>
+<p>1.在继续升级Node.js安装之前，请通过键入以下内容来更新Homebrew的存储库：</p>
+<pre tabindex="0"><code>brew update
+</code></pre><p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-brew-update-macos.png" alt="在MacOS中更新Homebrew"></p>
+<p>2.更新完成后，键入以下命令：</p>
+<pre tabindex="0"><code>brew upgrade node
+</code></pre><p>示例中的输出显示，系统上已经安装了最新版本的Node.js。</p>
+<p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-brew-upgrade-node-macos.png" alt="在MacOS上使用Homebrew升级Node.js和NPM安装"></p>
+<p>**注意：**有关更多详细信息，请查看我们的文章<a href="https://phoenixnap.com/kb/update-node-js-version">如何更新Node.js和NPM</a>。</p>
+<h2 id="在mac上卸载nodejs和npm">在Mac上卸载Node.js和NPM</h2>
+<p>1.使用**<code>brew uninstall</code>**命令卸载Node.js和NPM：</p>
+<pre tabindex="0"><code>brew uninstall node
+</code></pre><p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-brew-uninstall-node-macos.png" alt="在MacOS上使用Homebrew卸载Node.js和NPM安装"></p>
+<p>2.使用以下方式删除所有未使用的依赖项：</p>
+<pre tabindex="0"><code>brew autoremove
+</code></pre><p><img src="https://phoenixnap.com/kb/wp-content/uploads/2021/09/output-from-brew-autoremove-on-macos.png" alt="在MacOS上使用Homebrew删除未使用的依赖项"></p>
+<p>此命令删除**<code>brew uninstall</code>**未删除的软件包。</p>
+<p>结论</p>
+<p>阅读本教程后，您应该知道如何使用Homebrew在macOS上安装Node.js和NPM。如果您想了解有关具有Node.js的MEAN堆栈的更多信息，请阅读<a href="https://phoenixnap.com/kb/mean-vs-lamp">LAMP与MEAN：哪个更好？</a></p>
+<p>Marko Aleksic</p>
+<p>Marko Aleksić是phoenixNAP的技术作家。他对IT所有事物的与生俱来的好奇心，加上十多年的写作、教学和在IT相关领域的工作背景，使他进入技术写作，在那里他有机会运用自己的技能，使技术对每个人来说不那么令人生畏。</p>
+<p>接下来你应该阅读</p>
+<p><a href="https://phoenixnap.com/kb/category/databases">数据库</a></p>
+<p><a href="https://phoenixnap.com/kb/mongodb-vs-mysql">MongoDB与MySQL</a></p>
+<p>2020年12月31日</p>
+<hr>
+<p>从交易模型差异到支持质量，数据库管理系统有各种形状和大小。在本比较文章中，您将阅读两种流行的DBMS解决方案之间的区别：MongoDB和MySQL。</p>
+<p><a href="https://phoenixnap.com/kb/mongodb-vs-mysql">阅读更多</a></p>
+<p>© 2022 版权所有 phoenixNAP | 全球 IT 服务。版权所有。</p>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

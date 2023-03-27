@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Home brew &amp;oh-my-zsh&amp;语法高亮&amp;自动补全&amp;powerlevel10k 安装Home brew /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; 更新zsh brew install zsh 安装oh-my-zsh oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh 安装oh-my-zsh插件 语法高亮插件 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 语法自动建议插件 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 配置两个插件vi .zshrc plugins=( zsh-syntax-highlighting zsh-autosuggestions ) 更新.zshrc source ~/.zshrc powerlevel10k 安装
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k 配置
+ZSH_THEME=&#34;powerlevel10k/powerlevel10k&#34; 重新配置
+p10k configure 参考自https://www.cnblogs.com/himonkey/p/11853487.html#">  
+
+  <title>
+    
+      telegram 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>telegram </h1>
+
+    <h2 id="home-brew-oh-my-zsh语法高亮自动补全powerlevel10k">Home brew &amp;oh-my-zsh&amp;语法高亮&amp;自动补全&amp;powerlevel10k</h2>
+<h3 id="安装home-brew">安装Home brew</h3>
+<pre tabindex="0"><code>/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;
+</code></pre><h3 id="更新zsh">更新zsh</h3>
+<pre tabindex="0"><code>brew install zsh
+</code></pre><h3 id="安装oh-my-zsh">安装oh-my-zsh</h3>
+<p>oh-my-zsh</p>
+<pre tabindex="0"><code>curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+</code></pre><h3 id="安装oh-my-zsh插件">安装oh-my-zsh插件</h3>
+<h4 id="语法高亮插件">语法高亮插件</h4>
+<pre tabindex="0"><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+</code></pre><h4 id="语法自动建议插件">语法自动建议插件</h4>
+<pre tabindex="0"><code> git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+</code></pre><h4 id="配置两个插件vi-zshrc">配置两个插件<code>vi .zshrc</code></h4>
+<pre tabindex="0"><code>plugins=( zsh-syntax-highlighting zsh-autosuggestions )
+</code></pre><h4 id="更新zshrc">更新<code>.zshrc</code></h4>
+<pre tabindex="0"><code>source ~/.zshrc
+</code></pre><h4 id="powerlevel10k">powerlevel10k</h4>
+<p>安装</p>
+<pre tabindex="0"><code>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+</code></pre><p>配置</p>
+<pre tabindex="0"><code>ZSH_THEME=&#34;powerlevel10k/powerlevel10k&#34;
+</code></pre><p>重新配置</p>
+<pre tabindex="0"><code>p10k configure
+</code></pre><p>参考自https://www.cnblogs.com/himonkey/p/11853487.html#</p>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

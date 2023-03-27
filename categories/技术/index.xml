@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on bug dog</title>
+    <link>http://xinning1228.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on bug dog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2022 17:38:34 +0000</lastBuildDate><atom:link href="http://xinning1228.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用github&#43;picGo&#43;Typora解决网页图片插入问题</title>
+      <link>http://xinning1228.github.io/post/%E4%BD%BF%E7%94%A8github&#43;picgo&#43;typora%E8%A7%A3%E5%86%B3%E7%BD%91%E9%A1%B5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 11 Dec 2022 17:38:34 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BD%BF%E7%94%A8github&#43;picgo&#43;typora%E8%A7%A3%E5%86%B3%E7%BD%91%E9%A1%B5%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5%E9%97%AE%E9%A2%98/</guid>
+      <description>利用图床可以完美解决markdown文件图片插入的问题,使用github的免费空间储存图片,结合picGo自动上传功能,可以算的上一个完美的图床方案
+一.github配置 1.1 创建一个新仓库用于图片储存 点击新建一个仓库
+给仓库填写名称
+勾选以下两个选项选项
+点击绿色按钮创建
+1.2 获取Token用于pic访问github 打开github设置
+找到设置中Developer settings选项
+点击personal access tokens
+点击token (classic)
+点击Generate new token 点击Generate new token (classic)
+填写名称
+选择时间
+勾选ropo选项
+最后点击绿色按钮Generate token 新建
+复制生成的token值
+token值只显示一次,注意保存.
+二. picGo配置 2.1 下载picGo并安装 picGo下载地址
+2.2 配置picGo 打开picGo软件 点击图床设置 点击｀github 仓库名：[github用户名]/[第一步新建的仓库名称] 分支：默认master，从2020.10.01开始，github的默认分支名变更为main 设定token：第一步创建的token 指定存储路径：可填可不填，如果填写了，图片就会存储在img文件夹下 设定自定义域名：https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main，注意，此处的分支一定要填写@main 三. Typora配置 3.1 下载Typora并安装 下载地址
+3.2 配置Typora中上传功能 上传服务设定为PicGo(app)
+设定路径
+点击验证图片上传选项,测试上传功能
+3.3 配置PicGo-Server 将监听地址设为:127.0.0.1
+监听端口设为36677
+配置完成之后,每次在Typora中插入图片,可转为图床中的地址,从而解决markdown文件,图像插入的问题</description>
+    </item>
+    
+    <item>
+      <title>Typora实用技巧</title>
+      <link>http://xinning1228.github.io/post/typora-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Fri, 09 Dec 2022 14:29:38 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/typora-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+      <description>一、块元素 1.1 标题 标题在行的开头使用1-6个＃字符，对应于标题级别1-6，当然也可使用ctrl+数字键进行分级。
+# 这是一级标题## 这是二级标题###### 这是六级标题 1.2 引用文字 Markdown 使用电子邮件样式&amp;gt;字符进行块引用。它们表示为
+&amp;gt;可以进行嵌套,例如:
+今天是很美好的
+明天会更加美好
+后天是周末
+&amp;gt; 这是一个有两段的块引用。这是第一段。&amp;gt; 这是第二段。Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&amp;gt; 这是另一个只有一个段落的块引用。有三个空行分隔两个块引用。 1.3 列表 输入 * list item 1 将创建一个无序列表，该 * 符号可以替换为 + 或 -.例如
+这是无序列表 这是无序列表 这是无序列表 输入 1. list item 1 将创建一个有序列表.例如:
+这是有序列表 这是有序列表 这是有序列表 其 markdown 源代码如下：
+按teb可以进行缩进
+## 无序列表 * 红色 * 绿色 * 蓝色 ## 有序列表 1.</description>
+    </item>
+    
+    <item>
+      <title>从零开始搭建个人博客（五)</title>
+      <link>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%94/</link>
+      <pubDate>Fri, 22 Apr 2022 14:29:38 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%94/</guid>
+      <description>上一期我们总结了几个喜欢的HEXO主题，但是有些同学看完前几期教程可能连本地也没搭建出来，本期我们来聊一聊建站常见的几种报错，下面也有相应的解决办法。
+warning: LF will be replaced by CRLF in js/utils.js. git config --global core.autocrlf false 无法加载文件 C:\Users\10186\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本 按下 win+s 输入 powershell。然后右键以管理员身份运行。 然后输入 set-ExecutionPolicy RemoteSigned 命令 升级主题方法 git pull 升级 Hexo npm install Warning: Accessing non-existent property xxxx of module exports inside circular dependency 采用低版本 nodejs Cannot GET/xxx 1. 判断 public 目录下 xxx 文件是否存在。 （我的错误是 Cannot GET /，因此在 public 目录下寻找 index.html 是否存在。） 2. 如果说 index.html 不存在，那么执行 hexo c，hexo g 重新生成一次，回到步骤 1。 3.</description>
+    </item>
+    
+    <item>
+      <title>从零开始搭建个人博客（四）</title>
+      <link>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9B%9B/</link>
+      <pubDate>Wed, 20 Apr 2022 12:31:51 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%9B%9B/</guid>
+      <description>上期教程相信你已经学会了如何更改hexo的主题，本期给大家推荐几个我觉得很好看的主题，预览地址与项目地址的链接也将放在下方，请大家自行取用。
+NEXT 具体介绍：http://theme-next.iissnan.com/ 项目地址：https://github.com/iissnan/hexo-theme-next/
+stellar 使用介绍：https://xaoxuu.com/wiki/stellar/ 项目地址：https://github.com/xaoxuu/hexo-theme-stellar
+pure 预览地址：https://blog.cofess.com/ 项目地址：https://github.com/cofess/hexo-theme-pure
+####　nexmoe 预览地址：https://nexmoe.com/ 项目地址：https://github.com/theme-nexmoe/hexo-theme-nexmoe
+melody 预览地址：https://molunerfinn.com/ 主题文档：https://molunerfinn.com/hexo-theme-melody-doc/zh-Hans/
+aurora 预览地址：https://tridiamond.tech/ 项目地址：https://github.com/auroral-ui/hexo-theme-aurora
+butterfly 预览地址：https://butterfly.js.org/ 项目地址：https://github.com/jerryc127/hexo-theme-butterfly
+yun 示例：https://www.yunyoujun.cn/ 使用文档：https://yun.yunyoujun.cn/ 项目地址： https://github.com/YunYouJun/hexo-theme-yun
+diaspora 预览地址：https://fech.in/ 项目地址：https://github.com/Fechin/hexo-theme-diaspora
+ayer 预览地址：https://shen-yu.gitee.io/ 项目地址：https://github.com/Shen-Yu/hexo-theme-ayer 国内镜像：https://gitee.com/shen-yu/hexo-theme-ayer
+Bamboo 示例：https://yuang01.github.io/ 项目地址：https://github.com/yuang01/hexo-theme-bamboo
+以上是我觉得比较好看的几个主题，下期给大家盘点一下在构建网站时，常见的几个报错及解决方法，下期再见。 </description>
+    </item>
+    
+    <item>
+      <title>从零开始搭建个人博客（三）</title>
+      <link>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%89/</link>
+      <pubDate>Tue, 19 Apr 2022 14:40:43 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%89/</guid>
+      <description>上一期教程你已经学会了如何购买喜欢的域名，以及如何将域名解析到你的网站上，本期教给你如何去润色你的网站，打造属于你的风格。
+1、下载主题 2、更改主题 3、主题的一些相关设置 4、本地预览及上传 1、下载主题 下载主题有两种办法，你可以直接输入主题网站 例如：https://github.com/theme-nexmoe/hexo-theme-nexmoe 下载压缩包 解压到博客文件夹theme即可，或者输入在根目录git输入以下代码：
+git clone https://github.com/theme-nexmoe/hexo-theme-nexmoe.git 这样hexo的主题就下载到本地了
+2、更改主题 打开根目录中_config文件，将theme后面的名称替换为：themes中的文件夹名称并保存。
+3、主题的一些相关设置 我们约定：根目录中的_config文件为配置文件，theme中的_config文件为主题文件。打开主题文件，在那里我们可以更改主题中的相关设置，例如分类、归档等，在配置文件中我们可以更改一些基础配置，例如选用什么主题或者网站名称等。
+4、本地预览及上传 输入以下代码清理网站缓存：
+hexo c 输入以下代码下载：
+hexo g 输入以下代码本地预览：
+hexo s 输入以下代码上传至服务器：
+hexo d 稍等片刻刷新我们的网站就可以看到主题已经更改了，下期我将盘点一些颜值较高的一些主题分享给大家，下期再见。 </description>
+    </item>
+    
+    <item>
+      <title>从零开始搭建个人博客（二）</title>
+      <link>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/</link>
+      <pubDate>Thu, 14 Apr 2022 19:44:29 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/</guid>
+      <description>通过第一期教程，相信你已经成功搭建了自己的网站，并将它挂载到github服务器上了，本期将教给你如何把一个喜欢的域名解析到网页上。
+1、什么是域名 2、域名网站 3、在GitHub上创建存储库 4、在万网进行域名解析 5、将域名保存至本地 1、什么是域名 由于IP地址具有不方便记忆并且不能显示地址组织的名称和性质等缺点，人们设计出了域名，并通过网域名称系统（DNS，Domain Name System）来将域名和IP地址相互映 射，使人更方便地访问互联网，而不用去记住能够被机器直接读取的IP地址数串。
+2、如何购买域名 国内的域名网站有万网、腾讯云等网站可以购买。国外比较知名的域名网站有Godaddy、name等，搜索自己喜欢的域名进行下单，需要注意的，有以下几点： 1、国内网站购买域名都需要实名，但不需要备案。 2、.cn为后缀的域名都需要实名，因为这是中国的国家域名。 3、在国外注册的域名除.cn后缀的域名，其他例如.com、.top等域名都不需要实名。 4、无论.cn、.com，无论国内网站或者国外网站，都不需要备案，是否备案以服务器区域为主，如果挂载到国内服务器，网站必须要备案。
+这里推荐在国外域名网站购买域名，不需要实名、不会突然受到管控，建议购买.com、.net等国际知名域名。 3、在GitHub上创建存储库 1、在github上点击之前你创建的库，点击settings，在pages那一栏中找到 Custom domain 这一选项，将你购买的域名填入此处，点击save。
+4、在万网进行域名解析 到域名管理商将域名解析到（你的名字）.github.io ,等待域名生效，需要注意的是如果创建A的解析，则需要在cmd ping一下你的（你的名字）.github.io 填入ping出的ip地址才会生效。
+5、将域名保存至本地 在你博客文件夹中，打开\source文件夹，创建一个无任何格式的文件，将你购买的域名填入此处，注意：如果没有这一步，你的域名每次部署都要重置。
+现在你可以通过你的域名直接访问你的博客了，下一期将教你如何更改你的博客主题，进一步优化你的网站。 </description>
+    </item>
+    
+    <item>
+      <title>从零开始搭建个人博客（一）</title>
+      <link>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
+      <pubDate>Tue, 12 Apr 2022 12:02:04 +0000</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
+      <description>考虑过很多构建知识网络的方法，先后使用过notion、onenote、用过telegram记过笔记，后来想想自己搭个网站吧，搞个自己的知识库，具体步骤如下：
+1、注册github账号 2、安装git软件 3、安装nodejs软件 4、安装HEXO 5、初始化HEXO 6、将blog部署到github服务器 1、注册github账号 github官网：https://github.com/ 进入官网之后点击 sign up按钮 根据步骤进行注册需要注意的是，github不支持QQ邮箱。
+2、安装git软件 Git安装方法很多，最简单的是直接官网下载软件包，然后安装（Mac和Windows及其他版本都有） 下载链接：https://git-scm.com/downloads
+3、安装nodejs软件 Node.js也可以直接去官网下载对应系统安装包，然后一步步安装即可。 下载链接：https://nodejs.org/zh-cn/download/
+这一步windows需要配置环境，具体方法网上很多，需要注意的是，路径一定要选正确
+4、安装hexo 新建项目目录，可以在任意位置，尽量全英文路径。以我为例，我会在E盘创建一个blog的文件夹，用于存放我的项目文件
+如果你下载好了git并配置好了nodejs，进入blog文件夹，右击会出现一个git bash here的标志，点击它，输入：
+$ npm install -g hexo-cli 这样你的hexo就安装好了
+5、初始化hexo 右击git bash here 输入：
+$ hexo init 这一步你的blog文件夹里会生成很多文件，hexo已经在你电脑上了。
+6、将blog部署到github服务器 登录github账号，创建一个新项目，项目名称：（你的账户名）.github.io 我们回到我们的blog文件夹，修改配置文件_config.yml，在最下方改成
+deploy: type: git repository: https://github.com/（你的名字）/（你的名字）.github.io.git branch: master 现在可以输入以下指令
+$ hexo g $ hexo s $ hexo d 如果没出错的话，现在你的blog已经部署到github服务器上去了 输入：（你的名字）.github.io 就可以进行访问了 </description>
+    </item>
+    
+  </channel>
+</rss>

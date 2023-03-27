@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="利用图床可以完美解决markdown文件图片插入的问题,使用github的免费空间储存图片,结合picGo自动上传功能,可以算的上一个完美的图床方案
+一.github配置 1.1 创建一个新仓库用于图片储存 点击新建一个仓库
+给仓库填写名称
+勾选以下两个选项选项
+点击绿色按钮创建
+1.2 获取Token用于pic访问github 打开github设置
+找到设置中Developer settings选项
+点击personal access tokens
+点击token (classic)
+点击Generate new token 点击Generate new token (classic)
+填写名称
+选择时间
+勾选ropo选项
+最后点击绿色按钮Generate token 新建
+复制生成的token值
+token值只显示一次,注意保存.
+二. picGo配置 2.1 下载picGo并安装 picGo下载地址
+2.2 配置picGo 打开picGo软件 点击图床设置 点击｀github 仓库名：[github用户名]/[第一步新建的仓库名称] 分支：默认master，从2020.10.01开始，github的默认分支名变更为main 设定token：第一步创建的token 指定存储路径：可填可不填，如果填写了，图片就会存储在img文件夹下 设定自定义域名：https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main，注意，此处的分支一定要填写@main 三. Typora配置 3.1 下载Typora并安装 下载地址
+3.2 配置Typora中上传功能 上传服务设定为PicGo(app)
+设定路径
+点击验证图片上传选项,测试上传功能
+3.3 配置PicGo-Server 将监听地址设为:127.0.0.1
+监听端口设为36677
+配置完成之后,每次在Typora中插入图片,可转为图床中的地址,从而解决markdown文件,图像插入的问题">  
+
+  <title>
+    
+      使用github&#43;picGo&#43;Typora解决网页图片插入问题
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2022-12-11 17:38:34 &#43;0000 UTC">
+            2022-12-11
+        </time>
+    </p>
+
+    <h1>使用github&#43;picGo&#43;Typora解决网页图片插入问题</h1>
+
+    <blockquote>
+<p>利用图床可以完美解决markdown文件图片插入的问题,使用github的免费空间储存图片,结合picGo自动上传功能,可以算的上一个完美的图床方案</p>
+</blockquote>
+<h4 id="一github配置">一.github配置</h4>
+<h5 id="11-创建一个新仓库用于图片储存">1.1 创建一个新仓库用于图片储存</h5>
+<blockquote>
+<p>点击新建一个仓库</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211162922275.png" alt="image-20221211162922275"></p>
+<blockquote>
+<ul>
+<li>
+<p>给仓库填写名称</p>
+</li>
+<li>
+<p>勾选以下两个选项选项</p>
+</li>
+<li>
+<p>点击绿色按钮创建</p>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211163006163.png" alt="image-20221211163006163"></p>
+<h5 id="12-获取token用于pic访问github">1.2 获取Token用于pic访问github</h5>
+<p>打开github设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211163138004.png" alt="image-20221211163138004"></p>
+<blockquote>
+<ul>
+<li>
+<p>找到设置中<code>Developer settings</code>选项</p>
+</li>
+<li>
+<p>点击<code>personal access tokens</code></p>
+</li>
+<li>
+<p>点击<code>token (classic)</code></p>
+</li>
+<li>
+<p>点击<code>Generate new token </code></p>
+</li>
+<li>
+<p>点击<code>Generate new token (classic)</code></p>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211170538678.png" alt="image-20221211170538678"></p>
+<blockquote>
+<ul>
+<li>
+<p>填写名称</p>
+</li>
+<li>
+<p>选择时间</p>
+</li>
+<li>
+<p>勾选<code>ropo</code>选项</p>
+</li>
+<li>
+<p>最后点击绿色按钮<code>Generate  token </code>新建</p>
+</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211171349800.png" alt="image-20221211171349800"></p>
+<blockquote>
+<p>复制生成的token值</p>
+<blockquote>
+<p>token值只显示一次,注意保存.</p>
+</blockquote>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211171729814.png" alt=""></p>
+<h4 id="二-picgo配置">二. picGo配置</h4>
+<h5 id="21-下载picgo并安装">2.1 下载picGo并安装</h5>
+<p><a href="https://picgo.github.io/PicGo-Doc/zh/guide/#picgo-is-here">picGo下载地址</a></p>
+<h5 id="22-配置picgo">2.2 配置picGo</h5>
+<blockquote>
+<ul>
+<li>打开picGo软件</li>
+<li>点击<code>图床设置</code></li>
+<li>点击<code>｀github</code></li>
+<li>仓库名：[github用户名]/[第一步新建的仓库名称]</li>
+<li>分支：默认master，从2020.10.01开始，github的默认分支名变更为main</li>
+<li>设定token：第一步创建的token</li>
+<li>指定存储路径：可填可不填，如果填写了，图片就会存储在img文件夹下</li>
+<li>设定自定义域名：https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main，注意，此处的分支一定要填写@main</li>
+</ul>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211172620843.png" alt="image-20221211172620843"></p>
+<h3 id="三-typora配置">三. Typora配置</h3>
+<h5 id="31-下载typora并安装">3.1 下载Typora并安装</h5>
+<p><a href="www.typoraio.cn">下载地址</a></p>
+<h5 id="32-配置typora中上传功能">3.2 配置Typora中上传功能</h5>
+<blockquote>
+<p>上传服务设定为PicGo(app)</p>
+<p>设定路径</p>
+<p>点击验证图片上传选项,测试上传功能</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211175415437.png" alt="image-20221211175415437"></p>
+<h5 id="33-配置picgo-server">3.3 配置PicGo-Server</h5>
+<blockquote>
+<p>将监听地址设为:127.0.0.1</p>
+<p>监听端口设为36677</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/xinning1228/Typora@main/img/image-20221211180220592.png" alt="image-20221211180220592"></p>
+<p><strong>配置完成之后,每次在Typora中插入图片,可转为图床中的地址,从而解决markdown文件,图像插入的问题</strong></p>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="安装及卸载Oh My Zsh xcode-select --install Oh My Zsh, 『 安装 &amp; 配置 』 Oh My Zsh 是什么 Oh My Zsh 是一款社区驱动的命令行工具，正如它的主页上说的，Oh My Zsh是一种生活方式。它基于 zsh 命令行，提供了主题配置，插件机制，已经内置的便捷操作。给我们一种全新的方式使用命令行。 Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。 安装 Oh My Zsh 前提条件：必须已安装 zsh 笔者是 Mac 系统，以下操作都是基于 Mac 系统。 Oh My Zsh - a delightful &amp; open source framework for Z-Shellohmyz.sh/
+robbyrussell/oh-my-zshgithub.com/robbyrussell/oh-my-zsh
+Zsh 是什么 Zsh 是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。 # 打开终端，在终端上输入: zsh --version # 这个命令来查看我们的电脑上是否安装了 Zsh # 端查询版本为： zsh 5.8 (x86_64-apple-darwin20.">  
+
+  <title>
+    
+      telegram 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>telegram </h1>
+
+    <h1 id="安装及卸载oh-my-zsh">安装及卸载Oh My Zsh</h1>
+<pre tabindex="0"><code>xcode-select --install
+</code></pre><h2 id="oh-my-zsh--安装--配置-">Oh My Zsh, 『 安装 &amp; 配置 』</h2>
+<p><img src="https://pica.zhimg.com/v2-1cca76fdb0ecee31ad550081607f1ad2_720w.jpg?source=172ae18b" alt="Oh My Zsh, 『 安装 &amp; 配置 』"></p>
+<h3 id="oh-my-zsh-是什么">Oh My Zsh 是什么</h3>
+<ul>
+<li><strong>Oh My Zsh</strong> 是一款社区驱动的命令行工具，正如它的主页上说的，<strong>Oh My Zsh</strong>是一种生活方式。它基于 <strong>zsh</strong> 命令行，提供了主题配置，插件机制，已经内置的便捷操作。给我们一种全新的方式使用命令行。</li>
+<li><strong>Oh My Zsh</strong> 是基于 <strong>zsh</strong> 命令行的一个扩展工具集，提供了丰富的扩展功能。</li>
+<li>安装 <strong>Oh My Zsh</strong> 前提条件：必须已安装 <strong>zsh</strong></li>
+<li>笔者是 <strong>Mac</strong> 系统，以下操作都是基于 <strong>Mac</strong> 系统。</li>
+</ul>
+<p><a href="https://link.zhihu.com/?target=http%3A//ohmyz.sh/">Oh My Zsh - a delightful &amp; open source framework for Z-Shellohmyz.sh/<img src="https://pic2.zhimg.com/v2-55635c9da0c605919ab342d8aafbe729_180x120.jpg" alt="img"></a></p>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/robbyrussell/oh-my-zsh">robbyrussell/oh-my-zshgithub.com/robbyrussell/oh-my-zsh<img src="https://pic2.zhimg.com/v2-db114406d154bbab55b127051aa89b4d_ipico.jpg" alt="img"></a></p>
+<hr>
+<h3 id="zsh-是什么">Zsh 是什么</h3>
+<ul>
+<li><strong>Zsh</strong> 是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。</li>
+</ul>
+<pre tabindex="0"><code># 打开终端，在终端上输入: 
+zsh --version
+
+# 这个命令来查看我们的电脑上是否安装了 Zsh 
+# 端查询版本为： zsh 5.8 (x86_64-apple-darwin20.0)
+</code></pre><ul>
+<li>终端查询版本为： <strong>zsh 5.7.1 (x86_64-apple-darwin18.2.0)</strong></li>
+</ul>
+<pre tabindex="0"><code># 查看系统当前 shell
+cat /etc/shells 
+</code></pre><hr>
+<h3 id="安装-oh-my-zsh-方法">安装 Oh My Zsh 方法</h3>
+<ul>
+<li><strong>可以通过 curl 或 wget 两种方式来安装，用一条命令即可安装。</strong></li>
+</ul>
+<hr>
+<h3 id="curl-安装">curl 安装</h3>
+<p><strong>GitHub</strong>:</p>
+<pre tabindex="0"><code>sh -c &#34;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&#34;
+</code></pre><p><strong>Gitee ( 国内镜像 )</strong></p>
+<pre tabindex="0"><code>sh -c &#34;$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)&#34;
+</code></pre><hr>
+<h3 id="wget-安装">wget 安装</h3>
+<p><strong>GitHub</strong>:</p>
+<pre tabindex="0"><code>sh -c &#34;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&#34;
+</code></pre><h3 id="gitee--国内镜像-"><strong>Gitee ( 国内镜像 )</strong></h3>
+<pre tabindex="0"><code>sh -c &#34;$(wget -O- https://gitee.com/pocmon/mirrors/raw/master/tools/install.sh)&#34;
+</code></pre><hr>
+<h3 id="安装过程中输出如下">安装过程中输出如下：</h3>
+<pre tabindex="0"><code>xxxx% sh -c &#34;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&#34; 
+Cloning Oh My Zsh...
+Cloning into &#39;/Users/xxxx/.oh-my-zsh&#39;...
+remote: Counting objects: 831, done.
+remote: Compressing objects: 100% (700/700), done.
+remote: Total 831 (delta 14), reused 775 (delta 10), pack-reused 0
+Receiving objects: 100% (831/831), 567.67 KiB | 75.00 KiB/s, done.
+Resolving deltas: 100% (14/14), done.
+Looking for an existing zsh config...
+Found ~/.zshrc. Backing up to ~/.zshrc.pre-oh-my-zsh
+Using the Oh My Zsh template file and adding it to ~/.zshrc
+             __                                     __   
+      ____  / /_     ____ ___  __  __   ____  _____/ /_  
+     / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
+    / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
+    \____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+                            /____/                       ....is now installed!
+Please look over the ~/.zshrc file to select plugins, themes, and options.
+p.s. Follow us at https://twitter.com/ohmyzsh.
+p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.
+</code></pre><hr>
+<h3 id="设置主题">设置主题</h3>
+<h3 id="设置固定主题">设置固定主题</h3>
+<ul>
+<li><strong>安装完毕后，我们就可以使用了，先来简单配置一下，Oh My Zsh 提供了很多主题风格，我们可以根据自己的喜好，设置主题风格</strong></li>
+</ul>
+<pre tabindex="0"><code>open ~/.zshrc
+
+# 找到 ZSH_THEME
+# robbyrussell 是默认的主题
+ZSH_THEME=&#34;robbyrussell&#34;
+
+# ZSH_THEME=&#34;样式名称&#34; 
+</code></pre><ul>
+<li>保存这个文件文件，重新打开终端。</li>
+</ul>
+<hr>
+<h3 id="设置随机主题">设置随机主题</h3>
+<ul>
+<li>
+<p><strong>我们还可以随机设置主题：</strong></p>
+</li>
+<li>
+<p>步骤同上</p>
+</li>
+<li>
+<p>每次打开终端主题是随机的。</p>
+</li>
+<li>
+<p>终端输出：</p>
+</li>
+</ul>
+<pre tabindex="0"><code>[oh-my-zsh] Random theme &#39;/Users/xxxx/.oh-my-zsh/themes/zhann.zsh-theme&#39; loaded...
+</code></pre><ul>
+<li>其中 <strong>zhann.zsh-theme</strong> 是主题的名称， 有喜欢的童鞋可以记录保留.</li>
+</ul>
+<hr>
+<h3 id="查看主题名称">查看主题名称</h3>
+<ul>
+<li><strong>Oh My Zsh</strong> 默认自带了一些默认主题，存放在 <strong>~/.oh-my-zsh/themes</strong> 目录中。我们可以查看这些主题</li>
+<li>终端输入：</li>
+</ul>
+<pre tabindex="0"><code>cd ~/.oh-my-zsh/themes &amp;&amp; ls
+</code></pre><p><a href="https://link.zhihu.com/?target=https%3A//github.com/robbyrussell/oh-my-zsh/wiki/Themes">查看更多主题样式github.com/robbyrussell/oh-my-zsh/wiki/Themes</a></p>
+<hr>
+<h3 id="卸载-oh-my-zsh">卸载 Oh My Zsh</h3>
+<ul>
+<li>终端输入 ：</li>
+</ul>
+<pre tabindex="0"><code>uninstall_oh_my_zsh
+Are you sure you want to remove Oh My Zsh? [y/N]  Y
+</code></pre><ul>
+<li>终端提示信息：</li>
+</ul>
+<pre tabindex="0"><code>Removing ~/.oh-my-zsh
+Looking for original zsh config...
+Found ~/.zshrc.pre-oh-my-zsh -- Restoring to ~/.zshrc
+Found ~/.zshrc -- Renaming to ~/.zshrc.omz-uninstalled-20170820200007
+Your original zsh config was restored. Please restart your session.
+Thanks for trying out Oh My Zsh. It&#39;s been uninstalled.
+</code></pre><hr>
+<h3 id="tips">Tips</h3>
+<ul>
+<li>
+<p><strong>Oh My Zsh</strong> 的自动更新提示误触关掉了解决办法</p>
+</li>
+<li>
+<p>打开终端输入：</p>
+</li>
+<li>
+<p>如果不喜欢系统自带终端，笔者推荐一个强大的终端 App。</p>
+</li>
+<li>
+<p><strong>iTerm2</strong>，非常好用的一个终端软件。</p>
+</li>
+</ul>
+<p><a href="https://link.zhihu.com/?target=https%3A//iterm2.com/index.html">iTerm2 - macOS Terminal Replacementiterm2.com/index.html<img src="https://pic4.zhimg.com/v2-ee9dd96faec22ea59ac252d63db050e7_180x120.jpg" alt="img"></a></p>
+<hr>
+<h3 id="oh-my-zsh-443-connection-refused-错误无法安装-">Oh My Zsh 443: Connection Refused 错误无法安装 :</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/264161761">Dream：Oh My Zsh 443: Connection Refused 错误无法安装4 赞同 · 1 评论文章<img src="https://pic2.zhimg.com/v2-b58e01b9c786816198bc3b9fc481de89_180x120.jpg" alt="img"></a></p>
+<hr>
+<p><strong>Oh My Zsh 定制主题：</strong></p>
+<p><a href="https://zhuanlan.zhihu.com/p/265525597">Dream：Oh My Zsh, 『 Powerlevel9k 安装 &amp; 配置 』23 赞同 · 6 评论文章<img src="https://pic4.zhimg.com/v2-d954f509151d626211b2dce379cef807_180x120.jpg" alt="img"></a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/62419420">Dream：Oh My Zsh,『 Agnoster 主题配置 』6 赞同 · 0 评论文章<img src="https://pic3.zhimg.com/v2-1cca76fdb0ecee31ad550081607f1ad2_180x120.jpg" alt="img"></a></p>
+<hr>
+
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>

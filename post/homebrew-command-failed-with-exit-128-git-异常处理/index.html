@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="HomeBrew : Command failed with exit 128: git 异常处理 问题 今天使用 HomeBrew 安装 Redis 时，报了个诡异的异常:
+&gt; fatal: not in a git directory &gt; Error: Command failed with exit 128: git 复制代码 原因是 HomeBrew 的组件 homebrew-core 和 homebrew-cask 没有被识别为 Git 仓库
+解决方式 打开 Terminal，输入：brew -v执行上图红线中的 git 命令，就可以了。 最后用 brew -v 看下结果，如下图所示。
+另一种情况 极个别情况下，使用 --add safe.directory 也没有，那你可以将相关目录移除、然后重新添加，命令示例如下：
+&gt; rm -rf /opt/homebrew/Library/Taps/homebrew/homebrew-core &gt; brew tap homebrew/core &gt; rm -rf /opt/homebrew/Library/Taps/homebrew/homebrew-cask &gt; brew tap homebrew/cask 复制代码 ">  
+
+  <title>
+    
+      HomeBrew : Command failed with exit 128: git 异常处理 
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.ebe15b0394daa6798b8a40aa572a71b5a7a1beb8cc02c392f5c142e7d08ddb6052e049639385106440b538f394884685082b7441eef27a6a8315ec723155dc15.css" integrity="sha512-6&#43;FbA5TapnmLikCqVypxtaehvrjMAsOS9cFC59CN22BS4Eljk4UQZEC1OPOUiEaFCCt0Qe7yemqDFexyMVXcFQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-08 00:00:00 &#43;0800 CST">
+            2023-01-08
+        </time>
+    </p>
+
+    <h1>HomeBrew : Command failed with exit 128: git 异常处理 </h1>
+
+    <h1 id="homebrew--command-failed-with-exit-128-git-异常处理">HomeBrew : Command failed with exit 128: git 异常处理</h1>
+<h2 id="问题">问题</h2>
+<blockquote>
+<p>今天使用 HomeBrew 安装 Redis 时，报了个诡异的异常:</p>
+</blockquote>
+<pre tabindex="0"><code>&gt; fatal: not in a git directory
+&gt; Error: Command failed with exit 128: git
+复制代码
+</code></pre><blockquote>
+<p>原因是 HomeBrew 的组件 <code>homebrew-core</code> 和 <code>homebrew-cask</code> 没有被识别为 Git 仓库</p>
+</blockquote>
+<h2 id="解决方式">解决方式</h2>
+<blockquote>
+<p>打开 Terminal，输入：<code>brew -v</code><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aecf851faff841909e5712fd05a45b07~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.image?" alt="image.png">执行上图红线中的 git 命令，就可以了。 最后用 <code>brew -v</code> 看下结果，如下图所示。<img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b5bed99f4cbb4fd2af041dd43a67f1eb~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.image?" alt="image.png"></p>
+</blockquote>
+<h2 id="另一种情况">另一种情况</h2>
+<blockquote>
+<p>极个别情况下，使用 <code>--add safe.directory</code> 也没有，那你可以将相关目录移除、然后重新添加，命令示例如下：</p>
+</blockquote>
+<pre tabindex="0"><code>&gt; rm -rf /opt/homebrew/Library/Taps/homebrew/homebrew-core
+&gt; brew tap homebrew/core
+&gt; rm -rf /opt/homebrew/Library/Taps/homebrew/homebrew-cask
+&gt; brew tap homebrew/cask
+复制代码
+</code></pre>
+</article>
+
+            </div>
+        </main>
+    </body>
+</html>
