@@ -30,6 +30,19 @@ payload 描述 {year} 当前日期 - 年 {month} 当前日期 - 月 {day} 当前
     </item>
     
     <item>
+      <title>Home brew &amp;oh-my-zsh&amp;语法高亮&amp;自动补全&amp;powerlevel10k </title>
+      <link>http://xinning1228.github.io/post/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/</guid>
+      <description>Home brew &amp;amp;oh-my-zsh&amp;amp;语法高亮&amp;amp;自动补全&amp;amp;powerlevel10k 安装Home brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 更新zsh brew install zsh 安装oh-my-zsh oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh 安装oh-my-zsh插件 语法高亮插件 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 语法自动建议插件 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 配置两个插件vi .zshrc plugins=( zsh-syntax-highlighting zsh-autosuggestions ) 更新.zshrc source ~/.zshrc powerlevel10k 安装
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k 配置
+ZSH_THEME=&amp;#34;powerlevel10k/powerlevel10k&amp;#34; 重新配置
+p10k configure 参考自https://www.cnblogs.com/himonkey/p/11853487.html#</description>
+    </item>
+    
+    <item>
       <title>HomeBrew : Command failed with exit 128: git 异常处理 </title>
       <link>http://xinning1228.github.io/post/homebrew-command-failed-with-exit-128-git-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
       <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
@@ -183,30 +196,6 @@ https://t.me/setlanguage/zhcncc</description>
     </item>
     
     <item>
-      <title>telegram </title>
-      <link>http://xinning1228.github.io/post/%E5%AE%89%E8%A3%85%E5%8F%8A%E5%8D%B8%E8%BD%BDoh-my-zsh/</link>
-      <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>http://xinning1228.github.io/post/%E5%AE%89%E8%A3%85%E5%8F%8A%E5%8D%B8%E8%BD%BDoh-my-zsh/</guid>
-      <description>安装及卸载Oh My Zsh xcode-select --install Oh My Zsh, 『 安装 &amp;amp; 配置 』 Oh My Zsh 是什么 Oh My Zsh 是一款社区驱动的命令行工具，正如它的主页上说的，Oh My Zsh是一种生活方式。它基于 zsh 命令行，提供了主题配置，插件机制，已经内置的便捷操作。给我们一种全新的方式使用命令行。 Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。 安装 Oh My Zsh 前提条件：必须已安装 zsh 笔者是 Mac 系统，以下操作都是基于 Mac 系统。 Oh My Zsh - a delightful &amp;amp; open source framework for Z-Shellohmyz.sh/
-robbyrussell/oh-my-zshgithub.com/robbyrussell/oh-my-zsh
-Zsh 是什么 Zsh 是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。 # 打开终端，在终端上输入: zsh --version # 这个命令来查看我们的电脑上是否安装了 Zsh # 端查询版本为： zsh 5.8 (x86_64-apple-darwin20.</description>
-    </item>
-    
-    <item>
-      <title>telegram </title>
-      <link>http://xinning1228.github.io/post/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/</link>
-      <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
-      
-      <guid>http://xinning1228.github.io/post/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96/</guid>
-      <description>Home brew &amp;amp;oh-my-zsh&amp;amp;语法高亮&amp;amp;自动补全&amp;amp;powerlevel10k 安装Home brew /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 更新zsh brew install zsh 安装oh-my-zsh oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh 安装oh-my-zsh插件 语法高亮插件 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 语法自动建议插件 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 配置两个插件vi .zshrc plugins=( zsh-syntax-highlighting zsh-autosuggestions ) 更新.zshrc source ~/.zshrc powerlevel10k 安装
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k 配置
-ZSH_THEME=&amp;#34;powerlevel10k/powerlevel10k&amp;#34; 重新配置
-p10k configure 参考自https://www.cnblogs.com/himonkey/p/11853487.html#</description>
-    </item>
-    
-    <item>
       <title>如何在Mac上安装Node.js和NPM </title>
       <link>http://xinning1228.github.io/post/%E5%A6%82%E4%BD%95%E5%9C%A8mac%E4%B8%8A%E5%AE%89%E8%A3%85node.js%E5%92%8Cnpm/</link>
       <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
@@ -247,6 +236,17 @@ MongoDB与MySQL
 从交易模型差异到支持质量，数据库管理系统有各种形状和大小。在本比较文章中，您将阅读两种流行的DBMS解决方案之间的区别：MongoDB和MySQL。
 阅读更多
 © 2022 版权所有 phoenixNAP | 全球 IT 服务。版权所有。</description>
+    </item>
+    
+    <item>
+      <title>安装及卸载Oh My Zsh </title>
+      <link>http://xinning1228.github.io/post/%E5%AE%89%E8%A3%85%E5%8F%8A%E5%8D%B8%E8%BD%BDoh-my-zsh/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>http://xinning1228.github.io/post/%E5%AE%89%E8%A3%85%E5%8F%8A%E5%8D%B8%E8%BD%BDoh-my-zsh/</guid>
+      <description>安装及卸载Oh My Zsh xcode-select --install Oh My Zsh, 『 安装 &amp;amp; 配置 』 Oh My Zsh 是什么 Oh My Zsh 是一款社区驱动的命令行工具，正如它的主页上说的，Oh My Zsh是一种生活方式。它基于 zsh 命令行，提供了主题配置，插件机制，已经内置的便捷操作。给我们一种全新的方式使用命令行。 Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。 安装 Oh My Zsh 前提条件：必须已安装 zsh 笔者是 Mac 系统，以下操作都是基于 Mac 系统。 Oh My Zsh - a delightful &amp;amp; open source framework for Z-Shellohmyz.sh/
+robbyrussell/oh-my-zshgithub.com/robbyrussell/oh-my-zsh
+Zsh 是什么 Zsh 是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。 # 打开终端，在终端上输入: zsh --version # 这个命令来查看我们的电脑上是否安装了 Zsh # 端查询版本为： zsh 5.8 (x86_64-apple-darwin20.</description>
     </item>
     
     <item>
